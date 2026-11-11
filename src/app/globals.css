@@ -1,0 +1,241 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: var(--bg);
+  --color-fg: var(--fg);
+  --color-btn-soft: var(--btn-soft);
+  --color-inactive: var(--inactive);
+  --color-muted: var(--muted);
+  --color-white: var(--white);
+  --color-glass: var(--glass);
+  --color-accent: var(--accent);
+
+  --font-display: var(--font-clash-grotesk), sans-serif;
+  --font-body: var(--font-poppins), sans-serif;
+  --font-stat: var(--font-inter), sans-serif;
+}
+
+:root {
+  /* Colors */
+  --bg: #f3f5f6;
+  --fg: #111618;
+  --btn-soft: #dce2e5;
+  --inactive: #c4cfd4;
+  --muted: #607580;
+  --white: #ffffff;
+  --glass: rgba(255, 255, 255, 0.75);
+  --accent: #e02b02;
+
+  /* Typography scale (Tablet default 810-1199px) - adjusted for Aron / Creative Designer */
+  --hero-h1-size: clamp(64px, 10.8vw, 115px);
+  --hero-h1-lh: 1.0;
+  --hero-h1-ls: -3.5px;
+  --hero-line-gap: 8px;
+
+  --section-h2-size: 130px;
+  --section-h2-lh: 91px;
+  --section-h2-ls: -2.6px;
+  --section-h2-pt: 4px;
+
+  --statement-size: 50px;
+  --statement-lh: 55px;
+
+  --service-title-size: 50px;
+  --service-title-lh: 55px;
+
+  --project-title-size: 22px;
+  --project-title-lh: 28.6px;
+  --project-metric-size: 14px;
+  --project-metric-lh: 20px;
+
+  --stat-title-size: 28px;
+  --stat-title-lh: 36.4px;
+
+  --label-size: 16px;
+  --label-lh: 24px;
+
+  /* Spacing and shapes (measured at tablet ~982px) */
+  --page-pad-x: 48px;
+  --nav-height: 42px;
+  --nav-pad-y: 8px;
+  --nav-pad-x: 48px;
+
+  --hero-pad-bottom: 48px;
+  --hero-card-width: 300px;
+  --hero-card-gap: 20px;
+  --hero-card-pitch: 320px;
+  --hero-card-radius: 24px;
+
+  --statement-pad-y: 192px;
+  --statement-pad-x: 8px;
+  --statement-gap: 192px;
+  --statement-max-width: 870px;
+
+  --work-pad-x: 48px;
+  --work-col-width: 431px;
+  --work-col-gap: 8px;
+  --work-img-width: 431px;
+  --work-img-height: 544px;
+  --work-img-text-gap: 16px;
+  --work-row-gap: 48px;
+
+  --services-pt: 192px;
+  --services-gap: 48px;
+  --services-row-pitch: 212px;
+  --services-row-pb: 8px;
+
+  --stories-pt: 196px;
+  --stories-gap: 48px;
+
+  --reel-pad-y: 192px;
+  --reel-pad-x: 8px;
+
+  --btn-pill-radius: 100px;
+  --btn-pill-pad: 16px 32px 16px 28px;
+  --btn-pill-gap: 4px;
+
+  --carousel-arrow-size: 48px;
+  --footer-radius: 60px;
+  --footer-pad-x: 48px;
+}
+
+/* Desktop Breakpoint (>= 1200px) */
+@media (min-width: 1200px) {
+  :root {
+    --hero-h1-size: clamp(80px, 9.8vw, 142px);
+    --hero-h1-lh: 0.85;
+    --hero-h1-ls: -0.04em;
+    --hero-line-gap: 8px;
+
+    --section-h2-size: 11.8vw;
+    --section-h2-lh: 0.7;
+    --section-h2-ls: -0.02em;
+
+    --statement-size: 3.3vw;
+    --statement-lh: 1.1;
+
+    --service-title-size: 3.3vw;
+    --service-title-lh: 1.1;
+
+    --hero-card-width: 31.25vw;
+    --hero-card-gap: 2.0vw;
+    --hero-card-pitch: 33.25vw;
+    --hero-card-radius: calc(31.25vw * 0.08);
+
+    --page-pad-x: 48px;
+    --nav-pad-x: 48px;
+    --work-pad-x: 48px;
+    --footer-pad-x: 48px;
+  }
+}
+
+/* Mobile Breakpoint (< 810px) */
+@media (max-width: 809.98px) {
+  :root {
+    --page-pad-x: 20px;
+    --nav-pad-x: 20px;
+
+    --hero-h1-size: clamp(28px, 7.8vw, 56px);
+    --hero-h1-lh: 0.92;
+    --hero-h1-ls: -0.03em;
+    --hero-line-gap: 4px;
+
+    --hero-card-width: 60vw;
+    --hero-card-gap: 3.8vw;
+    --hero-card-pitch: 63.8vw;
+    --hero-card-radius: 20px;
+
+    --section-h2-size: clamp(44px, 12vw, 80px);
+    --section-h2-lh: 0.85;
+    --section-h2-ls: -0.02em;
+
+    --statement-size: clamp(24px, 5.5vw, 36px);
+    --statement-lh: 1.15;
+    --statement-pad-y: 96px;
+    --statement-gap: 48px;
+
+    --service-title-size: clamp(28px, 7vw, 38px);
+    --service-title-lh: 1.1;
+
+    --work-pad-x: 20px;
+    --work-col-width: 100%;
+    --work-img-height: 400px;
+    --work-row-gap: 36px;
+
+    --services-pt: 96px;
+    --services-gap: 32px;
+    --services-row-pitch: auto;
+
+    --stories-pt: 96px;
+    --stories-gap: 32px;
+
+    --reel-pad-y: 96px;
+
+    --footer-radius: 32px;
+    --footer-pad-x: 20px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--bg);
+  color: var(--fg);
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-poppins), sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: #23282D !important;
+  color: #FFFFFF !important;
+}
+
+/* Lenis styles */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis:not(.lenis-autoToggle).lenis-stopped {
+  overflow: clip;
+}
+
+.lenis [data-lenis-prevent],
+.lenis [data-lenis-prevent-wheel],
+.lenis [data-lenis-prevent-touch],
+.lenis [data-lenis-prevent-vertical],
+.lenis [data-lenis-prevent-horizontal] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+.lenis.lenis-autoToggle {
+  transition-property: overflow;
+  transition-duration: 1ms;
+  transition-behavior: allow-discrete;
+}
+
+/* General container utility */
+.container-measured {
+  width: 100%;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--page-pad-x);
+  padding-right: var(--page-pad-x);
+}

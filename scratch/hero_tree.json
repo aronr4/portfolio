@@ -1,0 +1,165 @@
+{
+  "tree": {
+    "tag": "DIV",
+    "name": "Hero",
+    "bg": "none",
+    "children": [
+      {
+        "tag": "DIV",
+        "name": null,
+        "bg": "none",
+        "children": [
+          {
+            "tag": "DIV",
+            "name": null,
+            "bg": "none",
+            "children": [
+              {
+                "tag": "HEADER",
+                "name": "Desktop",
+                "bg": "none",
+                "children": [
+                  {
+                    "tag": "DIV",
+                    "name": "Container",
+                    "bg": "none",
+                    "children": [
+                      {
+                        "tag": "DIV",
+                        "name": null,
+                        "bg": "none",
+                        "children": [
+                          {
+                            "tag": "DIV",
+                            "name": "Heading XXL",
+                            "bg": "none",
+                            "children": [
+                              {
+                                "tag": "DIV",
+                                "name": "Word 1",
+                                "bg": "none",
+                                "children": [
+                                  {
+                                    "tag": "DIV",
+                                    "name": null,
+                                    "bg": "none",
+                                    "children": [
+                                      null
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "DIV",
+                                "name": "Container",
+                                "bg": "none",
+                                "children": [
+                                  {
+                                    "tag": "DIV",
+                                    "name": "Line 2",
+                                    "bg": "none",
+                                    "children": [
+                                      null
+                                    ]
+                                  },
+                                  {
+                                    "tag": "DIV",
+                                    "name": "Period",
+                                    "bg": "none",
+                                    "children": [
+                                      null
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "DIV",
+                        "name": null,
+                        "bg": "none",
+                        "children": [
+                          {
+                            "tag": "P",
+                            "name": null,
+                            "bg": "none",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "DIV",
+                    "name": "Overlay",
+                    "bg": "linear-gradient(271deg, rgba(84, 84, 84, 0) 16%, rgba(0, 0, 0, 0.4) 100%)",
+                    "children": []
+                  },
+                  {
+                    "tag": "DIV",
+                    "name": "Image Reel",
+                    "bg": "none",
+                    "children": [
+                      {
+                        "tag": "DIV",
+                        "name": null,
+                        "bg": "none",
+                        "children": [
+                          {
+                            "tag": "DIV",
+                            "name": "Fill Parent",
+                            "bg": "none",
+                            "children": [
+                              {
+                                "tag": "DIV",
+                                "name": null,
+                                "bg": "none",
+                                "children": [
+                                  {
+                                    "tag": "DIV",
+                                    "name": null,
+                                    "bg": "none",
+                                    "children": [
+                                      null
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "mp4Matches": [],
+  "imgSample": [
+    "https://framerusercontent.com/images/wrhImFukTnwMbUGXdc0AEEqSL8.png",
+    "https://framerusercontent.com/images/SSuWvdAGVcO4rgjP8LhkRfAAvU.png",
+    "https://framerusercontent.com/images/6u5l4XC6p1Nz2MhlnRAfFFPNU.jpg",
+    "https://framerusercontent.com/images/Pd3XqdefSKxOwo7x3ryx2Xg7XDY.png?width=226&amp;height=46",
+    "https://framerusercontent.com/images/R0th5fwVElUQTT9huxwZEh99dE.jpg?width=1448&amp;height=1086",
+    "https://framerusercontent.com/images/R0th5fwVElUQTT9huxwZEh99dE.jpg?scale-down-to=512&amp;width=1448&amp;height=1086 512w,https://framerusercontent.com/images/R0th5fwVElUQTT9huxwZEh99dE.jpg?scale-down-to=1024&amp;width=1448&amp;height=1086 1024w,https://framerusercontent.com/images/R0th5fwVElUQTT9huxwZEh99dE.jpg?width=1448&amp;height=1086 1448w",
+    "https://framerusercontent.com/images/YVA66MSwMYiDVnxX7kJTFIOMVCk.jpg?width=1086&amp;height=1448",
+    "https://framerusercontent.com/images/YVA66MSwMYiDVnxX7kJTFIOMVCk.jpg?scale-down-to=1024&amp;width=1086&amp;height=1448 768w,https://framerusercontent.com/images/YVA66MSwMYiDVnxX7kJTFIOMVCk.jpg?width=1086&amp;height=1448 1086w",
+    "https://framerusercontent.com/images/KhGBU3pxfTDeQxwzyGKckveb5A.jpg?scale-down-to=1024&amp;width=1086&amp;height=1448 768w,https://framerusercontent.com/images/KhGBU3pxfTDeQxwzyGKckveb5A.jpg?width=1086&amp;height=1448 1086w",
+    "https://framerusercontent.com/images/KhGBU3pxfTDeQxwzyGKckveb5A.jpg?width=1086&amp;height=1448",
+    "https://framerusercontent.com/images/XqqfdwLTLPr9e4Xe7lAbioRvyw.jpg?scale-down-to=1024&amp;width=1086&amp;height=1448 768w,https://framerusercontent.com/images/XqqfdwLTLPr9e4Xe7lAbioRvyw.jpg?width=1086&amp;height=1448 1086w",
+    "https://framerusercontent.com/images/XqqfdwLTLPr9e4Xe7lAbioRvyw.jpg?width=1086&amp;height=1448",
+    "https://framerusercontent.com/images/8G3dIuDlgJdCRp9KGus3P7RvlZI.jpg?scale-down-to=1024&amp;width=1086&amp;height=1448 768w,https://framerusercontent.com/images/8G3dIuDlgJdCRp9KGus3P7RvlZI.jpg?width=1086&amp;height=1448 1086w",
+    "https://framerusercontent.com/images/8G3dIuDlgJdCRp9KGus3P7RvlZI.jpg?width=1086&amp;height=1448",
+    "https://framerusercontent.com/images/bVS9QEJVywX32fS66G9f7LQu1g.jpg?scale-down-to=1024&amp;width=1600&amp;height=2133 768w,https://framerusercontent.com/images/bVS9QEJVywX32fS66G9f7LQu1g.jpg?scale-down-to=2048&amp;width=1600&amp;height=2133 1536w,https://framerusercontent.com/images/bVS9QEJVywX32fS66G9f7LQu1g.jpg?width=1600&amp;height=2133 1600w",
+    "https://framerusercontent.com/images/bVS9QEJVywX32fS66G9f7LQu1g.jpg?width=1600&amp;height=2133",
+    "https://framerusercontent.com/images/4b5amoeQ9i5PTDQCngUS605p10.jpg?scale-down-to=1024&amp;width=1086&amp;height=1448 768w,https://framerusercontent.com/images/4b5amoeQ9i5PTDQCngUS605p10.jpg?width=1086&amp;height=1448 1086w",
+    "https://framerusercontent.com/images/4b5amoeQ9i5PTDQCngUS605p10.jpg?width=1086&amp;height=1448"
+  ]
+}

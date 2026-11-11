@@ -1,0 +1,317 @@
+{
+  "videoElements": [
+    {
+      "tag": "IFRAME",
+      "src": "https://framer.com/edit?framerSiteId=bf7479ae34fcea959f51ef5311cf928f28456e37a560c437ffad4c3e4fae2c49&source=dossier.framer.website&features=%7B%22editorBarDisableFrameAncestorsSecurity%22%3Afalse%2C%22onPageRichTextBlockSelection%22%3Atrue%7D&loadStart=1793433979973",
+      "sources": [],
+      "className": "status_hidden",
+      "parentHtml": "<body>\n\t<script async=\"\" src=\"https://events.framer.com/script?v=2\" data-fid=\"bf7479ae34fcea959f51ef5311cf928f28456e37a560c437ffad4c3e4fae2c49\" data-no-nt=\"\"></script>\n\t<!-- Start of bodyStart -->\n    \n    <!-- End of bodyStart -->\n\t\n\t<div id=\"main\" data-framer-hydrate-v2=\"{&quot;routeId&quot;:&quot"
+    }
+  ],
+  "allMedia": [
+    {
+      "name": "Overlay",
+      "bg": "linear-gradient(271deg, rgba(84, 84, 84, 0) 16%, rgba(0, 0, 0, 0.4) 100%)",
+      "className": "framer-1iqdt46"
+    },
+    {
+      "name": "Overlay",
+      "bg": "linear-gradient(rgba(84, 84, 84, 0) 14%, rgba(0, 0, 0, 0.4) 100%)",
+      "className": "framer-1wcdsez"
+    },
+    {
+      "name": "Overlay",
+      "bg": "linear-gradient(rgba(84, 84, 84, 0) 14%, rgba(0, 0, 0, 0.4) 100%)",
+      "className": "framer-1wcdsez"
+    },
+    {
+      "name": "Overlay",
+      "bg": "linear-gradient(rgba(84, 84, 84, 0) 14%, rgba(0, 0, 0, 0.4) 100%)",
+      "className": "framer-1wcdsez"
+    },
+    {
+      "name": "Overlay",
+      "bg": "linear-gradient(rgba(84, 84, 84, 0) 14%, rgba(0, 0, 0, 0.4) 100%)",
+      "className": "framer-1wcdsez"
+    },
+    {
+      "name": "Overlay",
+      "bg": "linear-gradient(rgba(84, 84, 84, 0) 14%, rgba(0, 0, 0, 0.4) 100%)",
+      "className": "framer-1wcdsez"
+    },
+    {
+      "name": "Overlay",
+      "bg": "linear-gradient(rgba(84, 84, 84, 0) 14%, rgba(0, 0, 0, 0.4) 100%)",
+      "className": "framer-1wcdsez"
+    },
+    {
+      "name": "Overlay",
+      "bg": "linear-gradient(rgba(84, 84, 84, 0) 14%, rgba(0, 0, 0, 0.4) 100%)",
+      "className": "framer-1wcdsez"
+    },
+    {
+      "name": "Overlay",
+      "bg": "linear-gradient(rgba(84, 84, 84, 0) 14%, rgba(0, 0, 0, 0.4) 100%)",
+      "className": "framer-1wcdsez"
+    },
+    {
+      "name": "Overlay",
+      "bg": "linear-gradient(rgba(84, 84, 84, 0) 14%, rgba(0, 0, 0, 0.4) 100%)",
+      "className": "framer-1wcdsez"
+    },
+    {
+      "name": "Overlay",
+      "bg": "linear-gradient(rgba(84, 84, 84, 0) 14%, rgba(0, 0, 0, 0.4) 100%)",
+      "className": "framer-1wcdsez"
+    },
+    {
+      "name": "Container",
+      "bg": "linear-gradient(rgb(220, 226, 229) 42%, rgb(220, 226, 229) 100%)",
+      "className": "framer-172a1ny"
+    }
+  ],
+  "statCards": [],
+  "exploreSection": [],
+  "sections": [
+    {
+      "name": "Desktop",
+      "tag": "NAV",
+      "length": 27,
+      "snippet": "Services Work About Contact"
+    },
+    {
+      "name": "Menu",
+      "tag": "NAV",
+      "length": 27,
+      "snippet": "Services Work About Contact"
+    },
+    {
+      "name": "Hero",
+      "tag": "DIV",
+      "length": 96,
+      "snippet": "What we do . We shape brands, products, and digital experiences from first idea to final launch."
+    },
+    {
+      "name": "Desktop",
+      "tag": "HEADER",
+      "length": 96,
+      "snippet": "What we do . We shape brands, products, and digital experiences from first idea to final launch."
+    },
+    {
+      "name": "Container",
+      "tag": "DIV",
+      "length": 96,
+      "snippet": "What we do . We shape brands, products, and digital experiences from first idea to final launch."
+    },
+    {
+      "name": "Heading XXL",
+      "tag": "DIV",
+      "length": 12,
+      "snippet": "What we do ."
+    },
+    {
+      "name": "About",
+      "tag": "SECTION",
+      "length": 417,
+      "snippet": "Full spectrum 20+ 0 + Specialties From strategy and identity to motion, content, and launch support. Fast track 2 0 Week"
+    },
+    {
+      "name": "Default",
+      "tag": "DIV",
+      "length": 100,
+      "snippet": "Full spectrum 20+ 0 + Specialties From strategy and identity to motion, content, and launch support."
+    },
+    {
+      "name": "Container",
+      "tag": "DIV",
+      "length": 13,
+      "snippet": "Full spectrum"
+    },
+    {
+      "name": "Dash Left",
+      "tag": "DIV",
+      "length": 13,
+      "snippet": "Full spectrum"
+    },
+    {
+      "name": "Content",
+      "tag": "DIV",
+      "length": 86,
+      "snippet": "20+ 0 + Specialties From strategy and identity to motion, content, and launch support."
+    },
+    {
+      "name": "Heading",
+      "tag": "DIV",
+      "length": 19,
+      "snippet": "20+ 0 + Specialties"
+    },
+    {
+      "name": "Title",
+      "tag": "DIV",
+      "length": 11,
+      "snippet": "Specialties"
+    },
+    {
+      "name": "Description",
+      "tag": "DIV",
+      "length": 66,
+      "snippet": "From strategy and identity to motion, content, and launch support."
+    },
+    {
+      "name": "Default",
+      "tag": "DIV",
+      "length": 118,
+      "snippet": "Fast track 2 0 Week Delivery Focused engagements designed to create clarity and momentum without a sprawling timeline."
+    },
+    {
+      "name": "Content",
+      "tag": "DIV",
+      "length": 107,
+      "snippet": "2 0 Week Delivery Focused engagements designed to create clarity and momentum without a sprawling timeline."
+    },
+    {
+      "name": "Heading",
+      "tag": "DIV",
+      "length": 17,
+      "snippet": "2 0 Week Delivery"
+    },
+    {
+      "name": "Title",
+      "tag": "DIV",
+      "length": 13,
+      "snippet": "Week Delivery"
+    },
+    {
+      "name": "Description",
+      "tag": "DIV",
+      "length": 89,
+      "snippet": "Focused engagements designed to create clarity and momentum without a sprawling timeline."
+    },
+    {
+      "name": "Default",
+      "tag": "DIV",
+      "length": 94,
+      "snippet": "Your call 3 0 Ways to work Choose a focused sprint, full project, or ongoing creative support."
+    },
+    {
+      "name": "Content",
+      "tag": "DIV",
+      "length": 84,
+      "snippet": "3 0 Ways to work Choose a focused sprint, full project, or ongoing creative support."
+    },
+    {
+      "name": "Heading",
+      "tag": "DIV",
+      "length": 16,
+      "snippet": "3 0 Ways to work"
+    },
+    {
+      "name": "Title",
+      "tag": "DIV",
+      "length": 12,
+      "snippet": "Ways to work"
+    },
+    {
+      "name": "Description",
+      "tag": "DIV",
+      "length": 67,
+      "snippet": "Choose a focused sprint, full project, or ongoing creative support."
+    },
+    {
+      "name": "Default",
+      "tag": "DIV",
+      "length": 102,
+      "snippet": "One system 100% 0 % Custom Every engagement is shaped around the brand, audience, and problem at hand."
+    },
+    {
+      "name": "Content",
+      "tag": "DIV",
+      "length": 91,
+      "snippet": "100% 0 % Custom Every engagement is shaped around the brand, audience, and problem at hand."
+    },
+    {
+      "name": "Heading",
+      "tag": "DIV",
+      "length": 15,
+      "snippet": "100% 0 % Custom"
+    },
+    {
+      "name": "Description",
+      "tag": "DIV",
+      "length": 75,
+      "snippet": "Every engagement is shaped around the brand, audience, and problem at hand."
+    },
+    {
+      "name": "Content",
+      "tag": "DIV",
+      "length": 155,
+      "snippet": "Services Focus. We work with founders, teams, and creative brands to turn their ideas into experiences with structure, m"
+    },
+    {
+      "name": "Heading",
+      "tag": "DIV",
+      "length": 15,
+      "snippet": "Services Focus."
+    },
+    {
+      "name": "Container",
+      "tag": "DIV",
+      "length": 381,
+      "snippet": "01 Branding Brand Strategy, Visual Identity, Logo Systems, Art Direction 02 UX Design Prototyping, Accessibility, Interf"
+    },
+    {
+      "name": "Vertical",
+      "tag": "DIV",
+      "length": 72,
+      "snippet": "01 Branding Brand Strategy, Visual Identity, Logo Systems, Art Direction"
+    },
+    {
+      "name": "Container",
+      "tag": "DIV",
+      "length": 72,
+      "snippet": "01 Branding Brand Strategy, Visual Identity, Logo Systems, Art Direction"
+    },
+    {
+      "name": "Title",
+      "tag": "DIV",
+      "length": 11,
+      "snippet": "01 Branding"
+    },
+    {
+      "name": "Description",
+      "tag": "DIV",
+      "length": 60,
+      "snippet": "Brand Strategy, Visual Identity, Logo Systems, Art Direction"
+    },
+    {
+      "name": "Vertical",
+      "tag": "DIV",
+      "length": 73,
+      "snippet": "02 UX Design Prototyping, Accessibility, Interface Design, Design Systems"
+    },
+    {
+      "name": "Container",
+      "tag": "DIV",
+      "length": 73,
+      "snippet": "02 UX Design Prototyping, Accessibility, Interface Design, Design Systems"
+    },
+    {
+      "name": "Title",
+      "tag": "DIV",
+      "length": 12,
+      "snippet": "02 UX Design"
+    },
+    {
+      "name": "Description",
+      "tag": "DIV",
+      "length": 60,
+      "snippet": "Prototyping, Accessibility, Interface Design, Design Systems"
+    },
+    {
+      "name": "Vertical",
+      "tag": "DIV",
+      "length": 71,
+      "snippet": "03 Digital Builds Website Development, Mobile Apps, CMS Setup, Security"
+    }
+  ]
+}
