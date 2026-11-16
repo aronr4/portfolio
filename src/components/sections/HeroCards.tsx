@@ -58,18 +58,18 @@ export const HERO_CARDS: HeroCardData[] = [
     ),
   },
 
-  // 3: Vault Pay (Mobile Banking Platform)
+  // 3: Vault Pay (Mobile Shopping Experience)
   {
     id: 3,
     name: "Vault Pay",
-    category: "Fintech App",
-    image: "https://framerusercontent.com/images/KhGBU3pxfTDeQxwzyGKckveb5A.jpg?width=1086&height=1448",
-    bg: "#1c382b",
-    accent: "#4ade80",
+    category: "Mobile Commerce",
+    image: "/images/projects/vault-pay.jpg",
+    bg: "#111618",
+    accent: "#ffffff",
     renderArtwork: () => (
-      <div className="w-full h-full relative overflow-hidden bg-[#1c382b] select-none">
+      <div className="w-full h-full relative overflow-hidden bg-[#111618] select-none">
         <Image
-          src="https://framerusercontent.com/images/KhGBU3pxfTDeQxwzyGKckveb5A.jpg?width=1086&height=1448"
+          src="/images/projects/vault-pay.jpg"
           alt="Vault Pay"
           fill
           sizes="(max-width: 768px) 70vw, 35vw"

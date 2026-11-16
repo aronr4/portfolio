@@ -204,7 +204,7 @@ export default async function ProjectDetailPage({
                   href={project.images.caseStudyPdf}
                   target="_blank"
                   rel="noopener noreferrer"
-                  download="dheerah-case-study.pdf"
+                  download={`${project.slug}-case-study.pdf`}
                   className="inline-flex items-center gap-2 text-xs uppercase tracking-wider font-display px-4 py-2 rounded-full bg-surface border border-white/10 hover:border-accent text-fg hover:text-accent transition-colors"
                 >
                   <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -216,12 +216,24 @@ export default async function ProjectDetailPage({
             </div>
 
             <div className="relative w-full rounded-2xl md:rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-surface">
-              <img
-                src={project.images.caseStudyImage || project.images.gallery[0]}
-                alt={`${project.title} Case Study Full Presentation`}
-                className="w-full h-auto block m-0 p-0"
-                loading="eager"
-              />
+              {project.images.caseStudyImages && project.images.caseStudyImages.length > 0 ? (
+                project.images.caseStudyImages.map((src, idx) => (
+                  <img
+                    key={idx}
+                    src={src}
+                    alt={`${project.title} Case Study Part ${idx + 1}`}
+                    className="w-full h-auto block m-0 p-0"
+                    loading={idx === 0 ? "eager" : "lazy"}
+                  />
+                ))
+              ) : (
+                <img
+                  src={project.images.caseStudyImage || project.images.gallery[0]}
+                  alt={`${project.title} Case Study Full Presentation`}
+                  className="w-full h-auto block m-0 p-0"
+                  loading="eager"
+                />
+              )}
             </div>
           </div>
         ) : (

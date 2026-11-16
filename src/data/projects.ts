@@ -22,6 +22,7 @@ export interface Project {
     secondary?: string;
     caseStudy?: boolean;
     caseStudyImage?: string;
+    caseStudyImages?: string[];
     caseStudyPdf?: string;
     gallery: string[];
   };
@@ -31,27 +32,34 @@ export const projects: Project[] = [
   {
     slug: "vault-pay",
     title: "Vault Pay",
-    category: "Fintech",
-    sector: "Fintech",
+    category: "E-Commerce",
+    sector: "Mobile Commerce",
     year: "2026",
-    metric: "41M",
-    metricLabel: "transactions",
-    description: "Vault Pay is a modern finance app that blends everyday banking, peer-to-peer payments, and light social interaction into one streamlined experience. The goal was to make money management feel more approachable without losing the sense of security people expect from financial tools.",
-    tagline: "Mobile banking, made faster.",
+    metric: "50+",
+    metricLabel: "product layouts",
+    description: "A minimalist mobile e-commerce shopping experience inspired by modern fashion retail, focusing on simplicity, visual clarity, and seamless product discovery across category navigation, wishlist, and bag management.",
+    tagline: "Minimalist mobile fashion shopping, refined.",
     quote: {
-      text: "Vault Pay became a cohesive product concept where sending, receiving, tracking, and understanding money all felt easy.",
+      text: "The interface delivers clean visual hierarchy, balanced spacing, and intuitive navigation that make product browsing effortless.",
       author: "Emily Smith",
-      role: "Vault Pay CEO"
+      role: "Lead Product Designer"
     },
-    challenge: "Moving money often meant jumping between banking tools, payment apps, and disconnected transaction histories. Vault Pay needed to bring those moments together without creating another crowded financial dashboard.",
-    solution: "The product was organized around familiar contacts, recent activity, and the actions users need most. Clear hierarchy and focused navigation reduced friction, while social cues added context without overwhelming the financial experience.",
-    outcome: "Millions moved with effortless ease, setting a new benchmark for consumer fintech apps.",
-    capabilities: ["Branding", "UX Design", "Digital Builds"],
+    challenge: "Traditional shopping apps often clutter the interface with heavy banners and fragmented navigation, making product discovery and checkout cumbersome.",
+    solution: "Designed a clean mobile shopping journey with balanced spacing, refined typography (SF Pro & Poppins), unified wishlist and shopping bag flows, and streamlined checkout.",
+    outcome: "Intuitive product browsing and friction-free user onboarding across 50+ product categories.",
+    capabilities: ["UI/UX Design", "Mobile App", "Design System", "Branding"],
     images: {
-      hero: "https://framerusercontent.com/images/KhGBU3pxfTDeQxwzyGKckveb5A.jpg",
-      secondary: "https://framerusercontent.com/images/KhGBU3pxfTDeQxwzyGKckveb5A.jpg",
+      hero: "/images/projects/vault-pay.jpg",
+      caseStudy: true,
+      caseStudyImage: "/images/projects/vault-pay/vault_pay_full_case_study.jpg",
+      caseStudyImages: [
+        "/images/projects/vault-pay/case1.jpg",
+        "/images/projects/vault-pay/case2.jpg",
+        "/images/projects/vault-pay/case3.jpg"
+      ],
+      caseStudyPdf: "/documents/vault-pay-case-study.pdf",
       gallery: [
-        "https://framerusercontent.com/images/KhGBU3pxfTDeQxwzyGKckveb5A.jpg"
+        "/images/projects/vault-pay/vault_pay_full_case_study.jpg"
       ]
     }
   },

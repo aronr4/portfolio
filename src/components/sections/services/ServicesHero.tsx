@@ -44,8 +44,8 @@ export default function ServicesHero({ videoSrc }: ServicesHeroProps) {
     },
     {
       title: "Vault Pay",
-      category: "Fintech Platform",
-      image: "https://framerusercontent.com/images/YVA66MSwMYiDVnxX7kJTFIOMVCk.jpg",
+      category: "Mobile Commerce",
+      image: "/images/projects/vault-pay.jpg",
     },
     {
       title: "Apex",

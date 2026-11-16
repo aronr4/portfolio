@@ -34,9 +34,9 @@ const exploreProjects: ExploreProject[] = [
   {
     slug: "vault-pay",
     title: "Vault Pay",
-    metric: "41M transactions",
+    metric: "50+ product layouts",
     arrow: "→",
-    image: "https://framerusercontent.com/images/KhGBU3pxfTDeQxwzyGKckveb5A.jpg",
+    image: "/images/projects/vault-pay.jpg",
   },
   {
     slug: "pulse",
