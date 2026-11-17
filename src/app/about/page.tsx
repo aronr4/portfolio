@@ -133,13 +133,13 @@ export default function AboutPage() {
         </div>
       </div>
 
-      {/* Awards Section */}
+      {/* Certificates Section */}
       <div className="mb-24 border-t border-white/10 pt-16">
         <span className="text-xs uppercase tracking-widest text-accent font-display block mb-3">
-          Recognition
+          Learning
         </span>
         <h2 className="font-display text-4xl sm:text-6xl font-bold tracking-tight text-fg mb-12">
-          Awards & Honors<span className="text-accent">.</span>
+          Certificates<span className="text-accent">.</span>
         </h2>
 
         <div className="flex flex-col divide-y divide-white/10 border-y border-white/10">
