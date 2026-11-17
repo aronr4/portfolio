@@ -11,7 +11,7 @@ import { HERO_CARDS, type HeroCardData } from "./HeroCards";
 const RING_ORDER: HeroCardData[] = [
   HERO_CARDS[5], // Nova
   HERO_CARDS[2], // W&H
-  HERO_CARDS[3], // Pulse
+  HERO_CARDS[3], // Skywills
   HERO_CARDS[1], // Outbound
   HERO_CARDS[0], // FlowFit
   HERO_CARDS[4], // Apex

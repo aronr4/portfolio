@@ -33,9 +33,9 @@ export default function ServicesHero({ videoSrc }: ServicesHeroProps) {
       image: "https://framerusercontent.com/images/bVS9QEJVywX32fS66G9f7LQu1g.jpg",
     },
     {
-      title: "Pulse",
-      category: "Digital Health",
-      image: "/images/projects/pulse.png",
+      title: "Skywills",
+      category: "Brand Identity",
+      image: "/images/projects/skywills/extracted_0.jpeg",
     },
     {
       title: "Dheerah",

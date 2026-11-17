@@ -81,19 +81,19 @@ export const HERO_CARDS: HeroCardData[] = [
     ),
   },
 
-  // 4: Pulse (Connected Health Ecosystem)
+  // 4: Skywills (Global Logistics & Brand Identity)
   {
     id: 4,
-    name: "Pulse",
-    category: "Digital Health",
-    image: "/images/projects/pulse.png",
+    name: "Skywills",
+    category: "Brand Identity",
+    image: "/images/projects/skywills/extracted_0.jpeg",
     bg: "#111618",
     accent: "#ffffff",
     renderArtwork: () => (
       <div className="w-full h-full relative overflow-hidden bg-[#111618] select-none">
         <Image
-          src="/images/projects/pulse.png"
-          alt="Pulse"
+          src="/images/projects/skywills/extracted_0.jpeg"
+          alt="Skywills"
           fill
           sizes="(max-width: 768px) 70vw, 35vw"
           priority

@@ -143,7 +143,7 @@ export default function FeaturedWork() {
         className="w-full grid grid-cols-1 md:grid-cols-2"
       >
         {featuredProjects.map((project) => {
-          const isPulse = project.slug === "pulse";
+          const isPulse = project.slug === "pulse" || project.slug === "skywills";
           const isHovered = hoveredCardSlug === project.slug;
 
           return (

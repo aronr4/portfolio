@@ -12,6 +12,7 @@ export async function generateStaticParams() {
   }));
   list.push({ slug: "aura" });
   list.push({ slug: "vault-pay" });
+  list.push({ slug: "pulse" });
   return list;
 }
 
@@ -25,7 +26,8 @@ export async function generateMetadata({
     (p) =>
       p.slug === slug ||
       (slug === "aura" && p.slug === "dheerah") ||
-      (slug === "vault-pay" && p.slug === "w-and-h")
+      (slug === "vault-pay" && p.slug === "w-and-h") ||
+      (slug === "pulse" && p.slug === "skywills")
   );
   if (!project) return { title: "Project Not Found" };
 
@@ -45,7 +47,8 @@ export default async function ProjectDetailPage({
     (p) =>
       p.slug === slug ||
       (slug === "aura" && p.slug === "dheerah") ||
-      (slug === "vault-pay" && p.slug === "w-and-h")
+      (slug === "vault-pay" && p.slug === "w-and-h") ||
+      (slug === "pulse" && p.slug === "skywills")
   );
   if (currentIndex === -1) {
     notFound();

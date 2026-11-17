@@ -66,29 +66,37 @@ export const projects: Project[] = [
     }
   },
   {
-    slug: "pulse",
-    title: "Pulse",
-    category: "Digital Health",
-    sector: "Digital Health",
+    slug: "skywills",
+    title: "Skywills",
+    category: "Brand Identity",
+    sector: "Logistics Company",
     year: "2026",
-    metric: "68%",
-    metricLabel: "weekly engagement",
-    description: "Pulse is a connected health platform that brings activity, recovery, heart data, and everyday wellness signals into one clear ecosystem. Designed across wearable and larger-screen experiences, the product turns constant streams of personal data into information people can understand quickly.",
-    tagline: "Everyday health, in one rhythm.",
+    metric: "100%",
+    metricLabel: "global route reach",
+    description: "Skywills provides global trade solutions, helping businesses worldwide optimize their international trade with real-time tracking, multimodal freight, and seamless supply chain integration.",
+    tagline: "Global solution for international trade.",
     quote: {
-      text: "Pulse gave us a way to make a lot of health data feel focused, useful, and genuinely easy to live with.",
-      author: "Maya Chen",
-      role: "Pulse Product Director"
+      text: "The Skywills mark expresses limitless reach. Three arcs of increasing curvature rise above a central navigation arrow, showing a company that adapts its path to every route, market and challenge: we bend to reach.",
+      author: "Skywills",
+      role: "Global Logistics & Trade"
     },
-    challenge: "Health platforms collect an enormous amount of information, but more data rarely means more clarity. Pulse needed to connect activity, recovery, heart rate, and environmental signals without making the experience feel clinical or overwhelming.",
-    solution: "The experience was built around layers of attention, putting essential signals first and deeper context one step away. Circular progress cues, restrained data visualizations, and high contrast created a recognizable visual language across devices.",
-    outcome: "68% weekly engagement and exceptional habit retention across watch and phone devices.",
-    capabilities: ["Branding", "Digital Builds", "Social Media"],
+    challenge: "Modern international trade requires an identity system that commands presence across high-velocity logistics infrastructure — from freight container ships and transcontinental trucks to airport terminals and digital tracking dashboards.",
+    solution: "A dynamic brand identity system centered on a navigation arrow and adaptive arcs, paired with high-legibility typographic hierarchies, precision route grids, and high-impact physical and digital mockups.",
+    outcome: "Bending distance, delivering everywhere. Unified presence across sea, air, and land logistics networks worldwide.",
+    capabilities: ["Brand Identity", "Visual Systems", "Art Direction", "Logistics Design"],
     images: {
-      hero: "/images/projects/pulse.png",
-      secondary: "/images/projects/pulse.png",
+      hero: "/images/projects/skywills/extracted_0.jpeg",
+      secondary: "/images/projects/skywills/extracted_2.jpeg",
+      heroAspect: "16/9",
+      caseStudy: true,
+      caseStudyPdf: "/documents/skywills-case-study.pdf",
+      caseStudyImage: "/images/projects/skywills/skywills_case_study_p1.png",
+      caseStudyImages: [
+        "/images/projects/skywills/skywills_case_study_p1.png"
+      ],
       gallery: [
-        "/images/projects/pulse.png"
+        "/images/projects/skywills/extracted_0.jpeg",
+        "/images/projects/skywills/extracted_2.jpeg"
       ]
     }
   },
@@ -207,7 +215,7 @@ export const heroReelImages = [
   "https://framerusercontent.com/images/4b5amoeQ9i5PTDQCngUS605p10.jpg",
   "https://framerusercontent.com/images/YVA66MSwMYiDVnxX7kJTFIOMVCk.jpg",
   "https://framerusercontent.com/images/KhGBU3pxfTDeQxwzyGKckveb5A.jpg",
-  "/images/projects/pulse.png",
+  "/images/projects/skywills/extracted_0.jpeg",
   "https://framerusercontent.com/images/6ka5ZUVdLrOwC1bihB169y0Jjig.jpg",
   "https://framerusercontent.com/images/nBocJpXmbqNC0oBwue39Q1ltNeM.jpg"
 ];
