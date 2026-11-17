@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Reveal from "@/components/ui/Reveal";
 import Odometer from "@/components/ui/Odometer";
+import CertificatesList from "@/components/sections/about/CertificatesList";
 
 export const metadata = {
   title: "About — Aron",
@@ -44,14 +45,6 @@ const teamMembers = [
     bio: "Crafting resonant positioning, sharp narrative arcs, and international cultural launch strategies.",
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80",
   },
-];
-
-const awards = [
-  { title: "Awwwards Site of the Year Nominee", year: "2025" },
-  { title: "CSS Design Awards — Best UI / UX / Innovation", year: "2025" },
-  { title: "FWA of the Month", year: "2024" },
-  { title: "Webby Awards Honoree — Digital Product", year: "2024" },
-  { title: "Communication Arts Typography Award", year: "2024" },
 ];
 
 export default function AboutPage() {
@@ -142,18 +135,7 @@ export default function AboutPage() {
           Certificates<span className="text-accent">.</span>
         </h2>
 
-        <div className="flex flex-col divide-y divide-white/10 border-y border-white/10">
-          {awards.map((award, i) => (
-            <div key={i} className="py-6 flex items-center justify-between">
-              <span className="font-display text-lg sm:text-xl font-bold text-fg">
-                {award.title}
-              </span>
-              <span className="text-xs uppercase tracking-widest text-muted font-display tabular-nums">
-                {award.year}
-              </span>
-            </div>
-          ))}
-        </div>
+        <CertificatesList />
       </div>
 
       {/* Team Members */}
