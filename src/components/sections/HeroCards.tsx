@@ -12,19 +12,19 @@ export interface HeroCardData {
 }
 
 export const HERO_CARDS: HeroCardData[] = [
-  // 1: FlowFit (Fitness Training Platform)
+  // 1: Dheerah (Designer Boutique)
   {
     id: 1,
-    name: "FlowFit",
-    category: "Fitness Platform",
-    image: "https://framerusercontent.com/images/4b5amoeQ9i5PTDQCngUS605p10.jpg?width=1086&height=1448",
+    name: "Dheerah",
+    category: "Designer Boutique",
+    image: "/images/projects/dheerah.jpg",
     bg: "#111618",
     accent: "#ffffff",
     renderArtwork: () => (
       <div className="w-full h-full relative overflow-hidden bg-[#111618] select-none">
         <Image
-          src="https://framerusercontent.com/images/4b5amoeQ9i5PTDQCngUS605p10.jpg?width=1086&height=1448"
-          alt="FlowFit"
+          src="/images/projects/dheerah.jpg"
+          alt="Dheerah"
           fill
           sizes="(max-width: 768px) 70vw, 35vw"
           priority
@@ -35,19 +35,19 @@ export const HERO_CARDS: HeroCardData[] = [
     ),
   },
 
-  // 2: Outbound (Expedition & Active Travel)
+  // 2: Skywills Totem (Global Logistics & Trade)
   {
     id: 2,
-    name: "Outbound",
-    category: "Active Expedition",
-    image: "https://framerusercontent.com/images/YVA66MSwMYiDVnxX7kJTFIOMVCk.jpg?width=1086&height=1448",
-    bg: "#e02b02",
+    name: "Skywills",
+    category: "Air & Sea Trade",
+    image: "/images/projects/skywills/extracted_2.jpeg",
+    bg: "#0d1b2a",
     accent: "#ffffff",
     renderArtwork: () => (
-      <div className="w-full h-full relative overflow-hidden bg-[#e02b02] select-none">
+      <div className="w-full h-full relative overflow-hidden bg-[#0d1b2a] select-none">
         <Image
-          src="https://framerusercontent.com/images/YVA66MSwMYiDVnxX7kJTFIOMVCk.jpg?width=1086&height=1448"
-          alt="Outbound"
+          src="/images/projects/skywills/extracted_2.jpeg"
+          alt="Skywills"
           fill
           sizes="(max-width: 768px) 70vw, 35vw"
           priority

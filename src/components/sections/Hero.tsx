@@ -12,8 +12,8 @@ const RING_ORDER: HeroCardData[] = [
   HERO_CARDS[5], // Nova
   HERO_CARDS[2], // W&H
   HERO_CARDS[3], // Skywills
-  HERO_CARDS[1], // Outbound
-  HERO_CARDS[0], // FlowFit
+  HERO_CARDS[1], // Skywills Totem
+  HERO_CARDS[0], // Dheerah
   HERO_CARDS[4], // Apex
 ];
 

@@ -20,12 +20,12 @@ export default function ServicesHero({ videoSrc }: ServicesHeroProps) {
   const [isPlaying, setIsPlaying] = useState(true);
   const [activeSlide, setActiveSlide] = useState(0);
 
-  // Cinematic project slides showing user's studio projects (Outbound warm orange theme first)
+  // Cinematic project slides showing user's studio projects
   const studioSlides = [
     {
-      title: "Outbound",
-      category: "Digital Experience",
-      image: "https://framerusercontent.com/images/R0th5fwVElUQTT9huxwZEh99dE.jpg",
+      title: "Dheerah",
+      category: "Designer Boutique",
+      image: "/images/projects/dheerah.jpg",
     },
     {
       title: "Nova",

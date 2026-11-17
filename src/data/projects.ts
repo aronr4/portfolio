@@ -156,65 +156,13 @@ export const projects: Project[] = [
         "/images/projects/dheerah/dheerah_case_study.jpg"
       ]
     }
-  },
-  {
-    slug: "flowfit",
-    title: "FlowFit",
-    category: "Fitness",
-    sector: "Fitness",
-    year: "2026",
-    metric: "3x",
-    metricLabel: "signup lift",
-    description: "FlowFit is an on-demand fitness platform built around choice, consistency, and everyday movement. Members can discover strength, mobility, cardio, and recovery classes.",
-    tagline: "Fitness that moves with you.",
-    quote: {
-      text: "FlowFit finally made our class library feel like an advantage instead of something members had to work through.",
-      author: "Jordan Lee",
-      role: "FlowFit Head of Product"
-    },
-    challenge: "A deep class library gave members plenty of options, but finding the right workout could quickly become its own exercise.",
-    solution: "Organized around time, training goal, and intensity with direct class information and personalized recommendations.",
-    outcome: "3x signup lift and 50% increase in workout completion rates.",
-    capabilities: ["Video Production", "Digital Builds", "UX Design"],
-    images: {
-      hero: "https://framerusercontent.com/images/4I2kWx8ci0eAgYehRx4XnlSv8.jpg",
-      gallery: [
-        "https://framerusercontent.com/images/4I2kWx8ci0eAgYehRx4XnlSv8.jpg"
-      ]
-    }
-  },
-  {
-    slug: "onward",
-    title: "Onward",
-    category: "Travel",
-    sector: "Travel",
-    year: "2026",
-    metric: "38%",
-    metricLabel: "more inquiries",
-    description: "Onward is a luxury travel brand built for people who would rather disappear somewhere remarkable than follow a familiar itinerary.",
-    tagline: "Luxury travel, beyond the expected.",
-    quote: {
-      text: "The new identity gave us permission to feel luxurious without becoming quiet, predictable, or interchangeable with everyone else.",
-      author: "Sofia Bennett",
-      role: "Onward Brand Director"
-    },
-    challenge: "The category was full of polished photography, muted palettes, and interchangeable promises of exclusivity.",
-    solution: "Dramatic destinations, oversized typography, saturated contrast, and language that feels more like an invitation.",
-    outcome: "38% surge in qualified private luxury expedition inquiries.",
-    capabilities: ["Video Production", "Social Media", "Branding"],
-    images: {
-      hero: "https://framerusercontent.com/images/diVgLXSOpJwZpKD8J2RgDwnerw.png",
-      gallery: [
-        "https://framerusercontent.com/images/diVgLXSOpJwZpKD8J2RgDwnerw.png"
-      ]
-    }
   }
 ];
 
 export const heroReelImages = [
-  "https://framerusercontent.com/images/4b5amoeQ9i5PTDQCngUS605p10.jpg",
-  "https://framerusercontent.com/images/YVA66MSwMYiDVnxX7kJTFIOMVCk.jpg",
-  "https://framerusercontent.com/images/KhGBU3pxfTDeQxwzyGKckveb5A.jpg",
+  "/images/projects/dheerah.jpg",
+  "/images/projects/skywills/extracted_2.jpeg",
+  "/images/projects/w-and-h.jpg",
   "/images/projects/skywills/extracted_0.jpeg",
   "https://framerusercontent.com/images/6ka5ZUVdLrOwC1bihB169y0Jjig.jpg",
   "https://framerusercontent.com/images/nBocJpXmbqNC0oBwue39Q1ltNeM.jpg"
