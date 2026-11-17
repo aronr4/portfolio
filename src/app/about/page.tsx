@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Reveal from "@/components/ui/Reveal";
 import Odometer from "@/components/ui/Odometer";
 import CertificatesList from "@/components/sections/about/CertificatesList";
@@ -23,27 +22,6 @@ const processSteps = [
     step: "03",
     title: "Create the moments.",
     description: "We choreograph layout, physical kinetic feedback, and high-performance animation to make every digital touchpoint distinctly memorable.",
-  },
-];
-
-const teamMembers = [
-  {
-    name: "Aron Vance",
-    role: "Founder & Creative Director",
-    bio: "Pioneering motion design systems and digital architecture for over a decade.",
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80",
-  },
-  {
-    name: "Elena Rostova",
-    role: "Head of Interface Engineering",
-    bio: "Bridging mathematical animation curves, front-end shaders, and high-performance code.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
-  },
-  {
-    name: "Marcus Thorne",
-    role: "Brand Strategy Director",
-    bio: "Crafting resonant positioning, sharp narrative arcs, and international cultural launch strategies.",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80",
   },
 ];
 
@@ -136,39 +114,6 @@ export default function AboutPage() {
         </h2>
 
         <CertificatesList />
-      </div>
-
-      {/* Team Members */}
-      <div className="border-t border-white/10 pt-16">
-        <span className="text-xs uppercase tracking-widest text-accent font-display block mb-3">
-          Leadership
-        </span>
-        <h2 className="font-display text-4xl sm:text-6xl font-bold tracking-tight text-fg mb-12">
-          Our team<span className="text-accent">.</span>
-        </h2>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {teamMembers.map((member) => (
-            <div key={member.name} className="flex flex-col bg-surface rounded-2xl overflow-hidden border border-white/10">
-              <div className="relative aspect-[3/4] w-full overflow-hidden bg-bg">
-                <Image
-                  src={member.image}
-                  alt={member.name}
-                  fill
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="font-display text-xl font-bold text-fg">{member.name}</h3>
-                <span className="text-xs text-accent font-display uppercase tracking-wider block mt-1 mb-3">
-                  {member.role}
-                </span>
-                <p className="text-xs text-muted font-body leading-relaxed">{member.bio}</p>
-              </div>
-            </div>
-          ))}
-        </div>
       </div>
     </main>
   );
