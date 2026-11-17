@@ -10,6 +10,7 @@ export async function generateStaticParams() {
     slug: project.slug,
   }));
   list.push({ slug: "aura" });
+  list.push({ slug: "vault-pay" });
   return list;
 }
 
@@ -19,7 +20,12 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const project = projects.find((p) => p.slug === slug || (slug === "aura" && p.slug === "dheerah"));
+  const project = projects.find(
+    (p) =>
+      p.slug === slug ||
+      (slug === "aura" && p.slug === "dheerah") ||
+      (slug === "vault-pay" && p.slug === "w-and-h")
+  );
   if (!project) return { title: "Project Not Found" };
 
   return {
@@ -34,7 +40,12 @@ export default async function ProjectDetailPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const currentIndex = projects.findIndex((p) => p.slug === slug || (slug === "aura" && p.slug === "dheerah"));
+  const currentIndex = projects.findIndex(
+    (p) =>
+      p.slug === slug ||
+      (slug === "aura" && p.slug === "dheerah") ||
+      (slug === "vault-pay" && p.slug === "w-and-h")
+  );
   if (currentIndex === -1) {
     notFound();
   }
@@ -69,7 +80,11 @@ export default async function ProjectDetailPage({
       {/* Clip-Reveal Hero Image */}
       <div className="container-x mb-16 md:mb-24">
         <Reveal variant="clip-up" duration={1.2}>
-          <div className="relative aspect-[16/9] w-full rounded-3xl overflow-hidden bg-surface shadow-2xl">
+          <div
+            className={`relative ${
+              project.images.heroAspect === "4/3" ? "aspect-[4/3]" : "aspect-[16/9]"
+            } w-full rounded-3xl overflow-hidden bg-surface shadow-2xl`}
+          >
             <Image
               src={project.images.hero}
               alt={project.title}

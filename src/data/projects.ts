@@ -24,14 +24,15 @@ export interface Project {
     caseStudyImage?: string;
     caseStudyImages?: string[];
     caseStudyPdf?: string;
+    heroAspect?: "16/9" | "4/3" | "auto";
     gallery: string[];
   };
 }
 
 export const projects: Project[] = [
   {
-    slug: "vault-pay",
-    title: "Vault Pay",
+    slug: "w-and-h",
+    title: "W&H",
     category: "E-Commerce",
     sector: "Mobile Commerce",
     year: "2026",
@@ -49,7 +50,8 @@ export const projects: Project[] = [
     outcome: "Intuitive product browsing and friction-free user onboarding across 50+ product categories.",
     capabilities: ["UI/UX Design", "Mobile App", "Design System", "Branding"],
     images: {
-      hero: "/images/projects/vault-pay.jpg",
+      hero: "/images/projects/w-and-h.jpg",
+      heroAspect: "4/3",
       caseStudy: true,
       caseStudyImage: "/images/projects/vault-pay/vault_pay_full_case_study.jpg",
       caseStudyImages: [
@@ -57,7 +59,7 @@ export const projects: Project[] = [
         "/images/projects/vault-pay/case2.jpg",
         "/images/projects/vault-pay/case3.jpg"
       ],
-      caseStudyPdf: "/documents/vault-pay-case-study.pdf",
+      caseStudyPdf: "/documents/w-and-h-case-study.pdf",
       gallery: [
         "/images/projects/vault-pay/vault_pay_full_case_study.jpg"
       ]

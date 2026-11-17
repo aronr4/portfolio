@@ -10,7 +10,7 @@ import { HERO_CARDS, type HeroCardData } from "./HeroCards";
 // [6, 1, 2, 3, 4, 5]
 const RING_ORDER: HeroCardData[] = [
   HERO_CARDS[5], // Nova
-  HERO_CARDS[2], // Vault Pay
+  HERO_CARDS[2], // W&H
   HERO_CARDS[3], // Pulse
   HERO_CARDS[1], // Outbound
   HERO_CARDS[0], // FlowFit

@@ -32,11 +32,11 @@ const exploreProjects: ExploreProject[] = [
     image: "https://framerusercontent.com/images/4b5amoeQ9i5PTDQCngUS605p10.jpg",
   },
   {
-    slug: "vault-pay",
-    title: "Vault Pay",
+    slug: "w-and-h",
+    title: "W&H",
     metric: "50+ product layouts",
     arrow: "→",
-    image: "/images/projects/vault-pay.jpg",
+    image: "/images/projects/w-and-h.jpg",
   },
   {
     slug: "pulse",

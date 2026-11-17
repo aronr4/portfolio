@@ -43,9 +43,9 @@ export default function ServicesHero({ videoSrc }: ServicesHeroProps) {
       image: "/images/projects/dheerah.jpg",
     },
     {
-      title: "Vault Pay",
+      title: "W&H",
       category: "Mobile Commerce",
-      image: "/images/projects/vault-pay.jpg",
+      image: "/images/projects/w-and-h.jpg",
     },
     {
       title: "Apex",
