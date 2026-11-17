@@ -47,7 +47,6 @@ export default function Hero() {
   const reelCardsRef = useRef<(HTMLDivElement | null)[]>([]);
 
   // Layer 3: Bottom row
-  const bottomLeftRef = useRef<HTMLDivElement>(null);
   const bottomRightRef = useRef<HTMLDivElement>(null);
 
   const prefersReducedMotion = useReducedMotion();
@@ -60,21 +59,10 @@ export default function Hero() {
       // ----------------------------------------------------
       // 1. FIRST LOAD ONLY: Bottom Row Spring Entrance
       // ----------------------------------------------------
-      if (bottomLeftRef.current && bottomRightRef.current) {
+      if (bottomRightRef.current) {
         if (prefersReducedMotion) {
-          gsap.set([bottomLeftRef.current, bottomRightRef.current], { opacity: 1, y: 0 });
+          gsap.set(bottomRightRef.current, { opacity: 1, y: 0 });
         } else {
-          gsap.fromTo(
-            bottomLeftRef.current,
-            { opacity: 0.001, y: 150 },
-            {
-              opacity: 1,
-              y: 0,
-              duration: 0.4,
-              delay: 0.2,
-              ease: "back.out(1.4)",
-            }
-          );
           gsap.fromTo(
             bottomRightRef.current,
             { opacity: 0.001, y: 150 },
@@ -600,23 +588,7 @@ export default function Hero() {
         {/* ========================================================== */}
         {/* LAYER 3: BOTTOM ROW (z-30, inside the panel) */}
         {/* ========================================================== */}
-        <div className="relative z-30 w-full flex items-center justify-between">
-          {/* Left: — Award-winning designs. */}
-          <div
-            ref={bottomLeftRef}
-            className="flex items-center gap-2 font-body font-medium text-fg will-change-transform"
-          >
-            <span className="w-4 h-[1.5px] bg-fg inline-block" />
-            <p
-              style={{
-                fontSize: "var(--label-size)",
-                lineHeight: "var(--label-lh)",
-              }}
-            >
-              Award-winning designs.
-            </p>
-          </div>
-
+        <div className="relative z-30 w-full flex items-center justify-end">
           {/* Right: ↗ Explore our work. */}
           <div ref={bottomRightRef} className="will-change-transform">
             <Link
