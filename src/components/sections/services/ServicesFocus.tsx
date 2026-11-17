@@ -71,10 +71,15 @@ const serviceItems: ServiceItem[] = [
   },
 ];
 
+const FOCUS_STATEMENT =
+  "I’m a freelance designer helping founders, teams, and creative brands turn big ideas into digital experiences with structure, momentum, and a distinct point of view.";
+
 export default function ServicesFocus() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
   const paragraphRef = useRef<HTMLParagraphElement>(null);
+
+  const statementWords = FOCUS_STATEMENT.split(" ");
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -93,20 +98,25 @@ export default function ServicesFocus() {
         }
       );
 
-      gsap.fromTo(
-        paragraphRef.current,
-        { y: 40, opacity: 0 },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 1,
-          ease: "expo.out",
-          scrollTrigger: {
-            trigger: paragraphRef.current,
-            start: "top 85%",
-          },
-        }
-      );
+      // Scroll-linked word-by-word color reveal: #c4cfd4 -> #111618
+      const wordSpans = paragraphRef.current?.querySelectorAll(".focus-statement-word");
+      if (wordSpans && wordSpans.length > 0) {
+        gsap.fromTo(
+          wordSpans,
+          { color: "var(--inactive)" },
+          {
+            color: "var(--fg)",
+            stagger: 0.08,
+            ease: "none",
+            scrollTrigger: {
+              trigger: paragraphRef.current,
+              start: "top 75%",
+              end: "bottom 45%",
+              scrub: true,
+            },
+          }
+        );
+      }
     }, sectionRef);
 
     return () => ctx.revert();
@@ -135,10 +145,16 @@ export default function ServicesFocus() {
 
         <p
           ref={paragraphRef}
-          className="font-poppins text-[clamp(22px,3.3vw,50px)] leading-[1.1] font-normal text-[#111618] mt-8 sm:mt-12 lg:mt-16 max-w-5xl"
+          className="font-poppins text-[clamp(22px,3.3vw,50px)] leading-[1.1] font-normal text-fg mt-8 sm:mt-12 lg:mt-16 max-w-5xl"
         >
-          I’m a freelance designer helping founders, teams, and creative brands turn big ideas
-          into digital experiences with structure, momentum, and a distinct point of view.
+          {statementWords.map((word, idx) => (
+            <span
+              key={`focus-word-${idx}`}
+              className="focus-statement-word inline-block mr-[0.28em] text-[var(--inactive)] transition-colors duration-150"
+            >
+              {word}
+            </span>
+          ))}
         </p>
       </div>
 

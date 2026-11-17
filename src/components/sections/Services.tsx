@@ -17,23 +17,65 @@ export default function Services() {
     if (!section || prefersReducedMotion) return;
 
     const ctx = gsap.context(() => {
-      const rowInners = section.querySelectorAll(".service-row-inner");
+      const rowInners = section.querySelectorAll<HTMLElement>(".service-row-inner");
+
+      // Entrance animation for rows
       gsap.fromTo(
         rowInners,
-        { yPercent: 60, opacity: 0 },
+        { yPercent: 40, opacity: 0 },
         {
           yPercent: 0,
           opacity: 1,
           duration: 0.9,
-          stagger: 0.1,
+          stagger: 0.08,
           ease: "expo.out",
           scrollTrigger: {
             trigger: rowsRef.current,
-            start: "top 80%",
+            start: "top 85%",
             once: true,
           },
         }
       );
+
+      // Scroll-linked text darkness reveal for each service row (matching Statement effect)
+      rowInners.forEach((row) => {
+        const title = row.querySelector<HTMLElement>(".service-title");
+        const desc = row.querySelector<HTMLElement>(".service-desc");
+
+        if (title) {
+          gsap.fromTo(
+            title,
+            { color: "var(--inactive)" }, // #c4cfd4
+            {
+              color: "var(--fg)", // #111618
+              ease: "none",
+              scrollTrigger: {
+                trigger: row,
+                start: "top 78%",
+                end: "top 45%",
+                scrub: true,
+              },
+            }
+          );
+        }
+
+        if (desc) {
+          gsap.fromTo(
+            desc,
+            { opacity: 0.35 },
+            {
+              opacity: 1,
+              ease: "none",
+              scrollTrigger: {
+                trigger: row,
+                start: "top 78%",
+                end: "top 45%",
+                scrub: true,
+              },
+            }
+          );
+        }
+      });
     }, sectionRef);
 
     return () => ctx.revert();
@@ -98,19 +140,23 @@ export default function Services() {
                   minHeight: "var(--services-row-pitch)",
                   paddingBottom: "var(--services-row-pb)",
                 }}
-                className="service-row-inner flex flex-col justify-between border-b border-black/[0.08] py-8 select-none transition-colors duration-300"
+                className="service-row-inner group flex flex-col justify-between border-b border-black/[0.08] py-8 select-none transition-colors duration-300"
                 onMouseEnter={() => setHoveredRow(item.id)}
                 onMouseLeave={() => setHoveredRow(null)}
               >
                 <div className="flex flex-col md:flex-row md:items-baseline justify-between gap-4">
-                  {/* Service Title (Poppins 400, 50px / 55px, --inactive by default, --fg on hover) */}
+                  {/* Service Title (Poppins 400, 50px / 55px, scroll-linked darkness from --inactive to --fg, instant --fg on hover) */}
                   <h3
                     style={{
                       fontSize: "var(--service-title-size)",
                       lineHeight: "var(--service-title-lh)",
-                      color: isHovered ? "var(--fg)" : "var(--inactive)",
+                      color: isHovered
+                        ? "var(--fg)"
+                        : prefersReducedMotion
+                        ? "var(--fg)"
+                        : undefined,
                     }}
-                    className="font-body font-normal tracking-tight transition-colors duration-300 cursor-pointer"
+                    className="service-title font-body font-normal tracking-tight transition-colors duration-200 cursor-pointer group-hover:!text-fg"
                   >
                     {item.title}
                   </h3>
@@ -121,7 +167,7 @@ export default function Services() {
                       fontSize: "var(--label-size)",
                       lineHeight: "var(--label-lh)",
                     }}
-                    className="font-body font-normal text-muted max-w-sm"
+                    className="service-desc font-body font-normal text-muted max-w-sm transition-opacity duration-200 group-hover:!opacity-100"
                   >
                     {item.capabilities.join(", ")}
                   </p>

@@ -264,3 +264,14 @@ html.lenis body {
   }
 }
 
+/* Services section scroll-driven baseline & hover states */
+.service-title {
+  color: var(--inactive);
+}
+.service-row-inner:hover .service-title {
+  color: var(--fg) !important;
+}
+.service-row-inner:hover .service-desc {
+  opacity: 1 !important;
+}
+
