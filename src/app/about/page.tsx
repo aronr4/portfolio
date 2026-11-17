@@ -68,6 +68,9 @@ export default function AboutPage() {
         <p className="text-muted text-base sm:text-lg max-w-2xl font-body mt-4">
           I’m Aron, an independent motion-first digital product designer. I work across brand, product design, and creative direction to make every interaction feel physically connected and hard to forget.
         </p>
+        <p className="text-muted text-base sm:text-lg max-w-2xl font-body mt-4">
+          After studying design, I began freelancing in 2026 to work directly with founders and take projects from first idea to launch. Since then, I’ve collaborated with startups and creative brands on brand identities, apps, and websites.
+        </p>
       </div>
 
       {/* Hero Studio Metrics */}
