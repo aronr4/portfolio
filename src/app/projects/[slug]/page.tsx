@@ -52,7 +52,6 @@ export default async function ProjectDetailPage({
   }
 
   const project = projects[currentIndex];
-  const nextProject = projects[(currentIndex + 1) % projects.length];
 
   return (
     <div className="pt-24 sm:pt-28 md:pt-36 pb-16 md:pb-24">
@@ -272,46 +271,6 @@ export default async function ProjectDetailPage({
         )}
       </div>
 
-      {/* Next Project Link with Hover Preview */}
-      <div className="container-x border-t border-black/[0.08] pt-16 mb-8">
-        <span className="text-xs uppercase tracking-widest text-muted font-display block mb-4">
-          Next Project
-        </span>
-
-        <Link
-          href={`/projects/${nextProject.slug}`}
-          className="group block relative overflow-hidden rounded-3xl bg-white p-8 sm:p-12 border border-black/[0.08] shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:border-accent transition-colors"
-          data-cursor="view"
-        >
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6 relative z-10">
-            <div>
-              <span className="text-xs uppercase tracking-wider text-accent font-display block mb-2">
-                {nextProject.category} • {nextProject.metric} {nextProject.metricLabel}
-              </span>
-              <h3 className="font-display text-4xl sm:text-6xl font-bold text-fg group-hover:text-accent transition-colors">
-                {nextProject.title}
-              </h3>
-            </div>
-
-            <div className="flex items-center gap-4">
-              {/* Thumbnail Preview */}
-              <div className="relative w-24 h-16 rounded-xl overflow-hidden hidden sm:block shrink-0 shadow-lg">
-                <Image
-                  src={nextProject.images.hero}
-                  alt={nextProject.title}
-                  fill
-                  sizes="96px"
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-              </div>
-
-              <span className="text-3xl text-muted group-hover:text-accent transition-transform duration-300 group-hover:translate-x-2">
-                →
-              </span>
-            </div>
-          </div>
-        </Link>
-      </div>
 
       {/* Explore Other Projects Carousel (Current project excluded) */}
       <ExploreSection excludeSlug={project.slug} />
