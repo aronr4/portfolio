@@ -17,7 +17,7 @@ interface StatCardData {
 const statsData: StatCardData[] = [
   {
     tag: "Full spectrum",
-    targetNumber: 20,
+    targetNumber: 4,
     suffix: "+",
     title: "Specialties",
     description:
