@@ -137,8 +137,8 @@ export default function ServicesFocus() {
           ref={paragraphRef}
           className="font-poppins text-[clamp(22px,3.3vw,50px)] leading-[1.1] font-normal text-[#111618] mt-8 sm:mt-12 lg:mt-16 max-w-5xl"
         >
-          We work with founders, teams, and creative brands to turn their ideas
-          into experiences with structure, momentum, and a clear point of view.
+          I’m a freelance designer helping founders, teams, and creative brands turn big ideas
+          into digital experiences with structure, momentum, and a distinct point of view.
         </p>
       </div>
 

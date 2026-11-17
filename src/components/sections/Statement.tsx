@@ -6,7 +6,7 @@ import { gsap, ScrollTrigger } from "@/lib/gsap";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
 
 const STATEMENT_TEXT =
-  "We work with founders, teams, and creative brands to turn big ideas into digital experiences with structure, momentum, and a distinct point of view.";
+  "I’m a freelance designer helping founders, teams, and creative brands turn big ideas into digital experiences with structure, momentum, and a distinct point of view.";
 
 export default function Statement() {
   const sectionRef = useRef<HTMLElement>(null);
