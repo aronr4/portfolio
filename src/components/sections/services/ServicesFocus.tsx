@@ -159,9 +159,6 @@ export default function ServicesFocus() {
                   <span className="font-inter text-sm font-normal text-[#607580] group-hover:text-accent transition-colors duration-300">
                     {item.number}
                   </span>
-                  <span className="font-poppins text-lg text-accent opacity-0 group-hover:opacity-100 transition-all duration-300 -translate-x-2 group-hover:translate-x-0">
-                    ↗
-                  </span>
                 </div>
 
                 <div className="my-auto">
@@ -191,9 +188,6 @@ export default function ServicesFocus() {
                 <div className="flex items-center justify-between">
                   <span className="font-inter text-sm font-normal text-[#607580] group-hover:text-accent transition-colors duration-300">
                     {item.number}
-                  </span>
-                  <span className="font-poppins text-lg text-accent opacity-0 group-hover:opacity-100 transition-all duration-300 -translate-x-2 group-hover:translate-x-0">
-                    ↗
                   </span>
                 </div>
 
@@ -226,7 +220,6 @@ export default function ServicesFocus() {
                 <span className="font-inter text-sm font-normal text-[#607580] group-hover:text-accent transition-colors">
                   {item.number}
                 </span>
-                <span className="font-poppins text-base text-accent">↗</span>
               </div>
 
               <h3 className="font-poppins text-3xl sm:text-4xl font-normal text-[#111618] transition-colors duration-300 group-hover:text-accent">
