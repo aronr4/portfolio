@@ -131,9 +131,7 @@ export default function Footer() {
                 {siteConfig.email}
               </a>
               <a
-                href={`https://wa.me/${siteConfig.whatsapp}`}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={`tel:${siteConfig.phone}`}
                 className="text-muted hover:text-fg transition-colors"
               >
                 {siteConfig.phone}

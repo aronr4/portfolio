@@ -23,7 +23,7 @@ export const siteConfig: SiteConfig = {
   name: "Aron",
   title: "Aron — Creative Designer",
   description: "Creative designer crafting digital products, brands, and motion-driven experiences.",
-  email: "hello@aron.com",
+  email: "sathisharonr@gmail.com",
   phone: "+91 8220720241",
   whatsapp: "918220720241",
   location: "New York, NY",
