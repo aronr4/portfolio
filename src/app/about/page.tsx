@@ -1,6 +1,7 @@
 import Reveal from "@/components/ui/Reveal";
 import Odometer from "@/components/ui/Odometer";
 import CertificatesList from "@/components/sections/about/CertificatesList";
+import ExploreSection from "@/components/sections/ExploreSection";
 
 export const metadata = {
   title: "About — Aron",
@@ -27,7 +28,8 @@ const processSteps = [
 
 export default function AboutPage() {
   return (
-    <div className="container-x pt-24 sm:pt-28 md:pt-36 pb-16 md:pb-24">
+    <div className="w-full flex flex-col items-center">
+      <div className="container-x pt-24 sm:pt-28 md:pt-36 pb-16 md:pb-24">
       {/* Header */}
       <div className="border-b border-black/[0.08] pb-12 mb-16">
         <span className="text-xs uppercase tracking-widest text-accent font-display block mb-3">
@@ -105,7 +107,7 @@ export default function AboutPage() {
       </div>
 
       {/* Certificates Section */}
-      <div className="mb-24 border-t border-black/[0.08] pt-16">
+      <div className="border-t border-black/[0.08] pt-16">
         <span className="text-xs uppercase tracking-widest text-accent font-display block mb-3">
           Learning
         </span>
@@ -116,5 +118,8 @@ export default function AboutPage() {
         <CertificatesList />
       </div>
     </div>
+
+    <ExploreSection />
+  </div>
   );
 }

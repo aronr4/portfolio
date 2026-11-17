@@ -3,7 +3,7 @@ import Statement from "@/components/sections/Statement";
 import FeaturedWork from "@/components/sections/FeaturedWork";
 import Services from "@/components/sections/Services";
 import Stories from "@/components/sections/Stories";
-import ImageReelSection from "@/components/sections/ImageReelSection";
+import ExploreSection from "@/components/sections/ExploreSection";
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
       <FeaturedWork />
       <Services />
       <Stories />
-      <ImageReelSection />
+      <ExploreSection />
     </div>
   );
 }

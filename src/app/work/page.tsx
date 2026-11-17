@@ -6,6 +6,7 @@ import Link from "next/link";
 import { projects } from "@/data/projects";
 import Counter from "@/components/ui/Counter";
 import Reveal from "@/components/ui/Reveal";
+import ExploreSection from "@/components/sections/ExploreSection";
 import { cn } from "@/lib/utils";
 
 const CATEGORIES = ["All", ...Array.from(new Set(projects.map((p) => p.category)))];
@@ -18,7 +19,8 @@ export default function WorkPage() {
     : projects.filter((p) => p.category === activeCategory);
 
   return (
-    <div className="container-x pt-24 sm:pt-28 md:pt-36 pb-16 md:pb-24">
+    <div className="w-full flex flex-col items-center">
+      <div className="container-x pt-24 sm:pt-28 md:pt-36 pb-16 md:pb-24">
       {/* Page Header */}
       <div className="border-b border-black/[0.08] pb-12 mb-12">
         <span className="text-xs uppercase tracking-widest text-accent font-display block mb-3">
@@ -114,5 +116,8 @@ export default function WorkPage() {
         ))}
       </div>
     </div>
-  );
+
+    <ExploreSection />
+  </div>
+);
 }

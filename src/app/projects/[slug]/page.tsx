@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { projects } from "@/data/projects";
 import Reveal from "@/components/ui/Reveal";
 import Counter from "@/components/ui/Counter";
+import ExploreSection from "@/components/sections/ExploreSection";
 
 export async function generateStaticParams() {
   const list = projects.map((project) => ({
@@ -272,14 +273,14 @@ export default async function ProjectDetailPage({
       </div>
 
       {/* Next Project Link with Hover Preview */}
-      <div className="container-x border-t border-white/10 pt-16">
+      <div className="container-x border-t border-black/[0.08] pt-16 mb-8">
         <span className="text-xs uppercase tracking-widest text-muted font-display block mb-4">
           Next Project
         </span>
 
         <Link
           href={`/projects/${nextProject.slug}`}
-          className="group block relative overflow-hidden rounded-3xl bg-surface p-8 sm:p-12 border border-white/10 hover:border-accent transition-colors"
+          className="group block relative overflow-hidden rounded-3xl bg-white p-8 sm:p-12 border border-black/[0.08] shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:border-accent transition-colors"
           data-cursor="view"
         >
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6 relative z-10">
@@ -311,6 +312,9 @@ export default async function ProjectDetailPage({
           </div>
         </Link>
       </div>
+
+      {/* Explore Other Projects Carousel (Current project excluded) */}
+      <ExploreSection excludeSlug={project.slug} />
     </div>
   );
 }
