@@ -3,8 +3,8 @@ import Reveal from "@/components/ui/Reveal";
 import Odometer from "@/components/ui/Odometer";
 
 export const metadata = {
-  title: "About — Kinetic Studio",
-  description: "An independent motion-first design and engineering studio partnering with visionary creators worldwide.",
+  title: "About — Aron",
+  description: "I’m Aron, an independent motion-first digital product designer partnering with visionary creators worldwide.",
 };
 
 const processSteps = [
@@ -63,10 +63,10 @@ export default function AboutPage() {
           Behind the Craft
         </span>
         <h1 className="font-display text-5xl sm:text-7xl md:text-8xl font-bold tracking-tight text-fg">
-          Our Story<span className="text-accent">.</span>
+          My Story<span className="text-accent">.</span>
         </h1>
         <p className="text-muted text-base sm:text-lg max-w-2xl font-body mt-4">
-          Kinetic is an independent motion-first digital product studio. We work across brand, product architecture, and creative code to make every interaction feel physically connected and hard to forget.
+          I’m Aron, an independent motion-first digital product designer. I work across brand, product design, and creative direction to make every interaction feel physically connected and hard to forget.
         </p>
       </div>
 
