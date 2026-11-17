@@ -74,10 +74,10 @@ export default function AboutPage() {
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 py-12 border-b border-white/10 mb-20">
         <div>
           <div className="font-display text-5xl sm:text-6xl font-bold text-fg flex items-baseline">
-            <Odometer value={50} suffix="+" />
+            <Odometer value={5} suffix="+" />
           </div>
           <span className="text-xs uppercase tracking-wider text-muted font-display mt-2 block">
-            Design Awards Won
+            Projects Completed
           </span>
         </div>
 
