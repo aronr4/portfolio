@@ -82,7 +82,7 @@ export default function Services() {
             }}
             className="font-display font-semibold text-fg"
           >
-            {"What \nwe do."}
+            {"What \nI do."}
           </h2>
         </div>
 

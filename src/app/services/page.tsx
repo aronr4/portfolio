@@ -7,7 +7,7 @@ import ServicesExplore from "@/components/sections/services/ServicesExplore";
 export const metadata: Metadata = {
   title: "Services — Aron",
   description:
-    "We shape brands, products, and digital experiences from first idea to final launch. Full spectrum capabilities from brand strategy to digital engineering.",
+    "I shape brands, products, and digital experiences from first idea to final launch. Full spectrum capabilities from brand strategy to digital engineering.",
 };
 
 export default function ServicesPage() {

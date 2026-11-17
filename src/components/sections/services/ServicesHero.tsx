@@ -211,7 +211,7 @@ export default function ServicesHero({ videoSrc }: ServicesHeroProps) {
 
         {/* Hero Title & Subtitle */}
         <div className="relative z-30 flex flex-col justify-end mt-auto max-w-4xl">
-          {/* Headline: "What we do." with orange accent period */}
+          {/* Headline: "What I do." with orange accent period */}
           <div className="flex flex-col select-none">
             <h1
               ref={whatRef}
@@ -223,7 +223,7 @@ export default function ServicesHero({ videoSrc }: ServicesHeroProps) {
               ref={weDoRef}
               className="font-clash text-white text-[clamp(64px,16vw,230px)] leading-[0.7] tracking-[-0.04em] font-semibold mt-2 md:mt-4"
             >
-              we do<span className="text-accent">.</span>
+              I do<span className="text-accent">.</span>
             </h1>
           </div>
 
@@ -232,7 +232,7 @@ export default function ServicesHero({ videoSrc }: ServicesHeroProps) {
             ref={subtitleRef}
             className="font-inter text-white/90 text-[clamp(18px,2.2vw,30px)] leading-[1.3] font-normal mt-6 md:mt-10 max-w-2xl"
           >
-            We shape brands, products, and digital experiences from first idea to
+            I shape brands, products, and digital experiences from first idea to
             final launch.
           </p>
         </div>
