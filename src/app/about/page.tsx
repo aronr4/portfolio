@@ -27,9 +27,9 @@ const processSteps = [
 
 export default function AboutPage() {
   return (
-    <main className="container-x py-16 md:py-24">
+    <div className="container-x pt-24 sm:pt-28 md:pt-36 pb-16 md:pb-24">
       {/* Header */}
-      <div className="border-b border-white/10 pb-12 mb-16">
+      <div className="border-b border-black/[0.08] pb-12 mb-16">
         <span className="text-xs uppercase tracking-widest text-accent font-display block mb-3">
           Behind the Craft
         </span>
@@ -45,7 +45,7 @@ export default function AboutPage() {
       </div>
 
       {/* Hero Studio Metrics */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 py-12 border-b border-white/10 mb-20">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 py-12 border-b border-black/[0.08] mb-20">
         <div>
           <div className="font-display text-5xl sm:text-6xl font-bold text-fg flex items-baseline">
             <Odometer value={5} suffix="+" />
@@ -86,7 +86,7 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {processSteps.map((step) => (
             <Reveal key={step.step} variant="fade-up">
-              <div className="p-8 rounded-2xl bg-surface border border-white/10 flex flex-col justify-between h-full">
+              <div className="p-8 rounded-2xl bg-white border border-black/[0.08] shadow-[0_4px_20px_rgba(0,0,0,0.03)] flex flex-col justify-between h-full">
                 <div>
                   <span className="text-sm font-display text-accent font-bold tabular-nums">
                     {step.step}
@@ -105,7 +105,7 @@ export default function AboutPage() {
       </div>
 
       {/* Certificates Section */}
-      <div className="mb-24 border-t border-white/10 pt-16">
+      <div className="mb-24 border-t border-black/[0.08] pt-16">
         <span className="text-xs uppercase tracking-widest text-accent font-display block mb-3">
           Learning
         </span>
@@ -115,6 +115,6 @@ export default function AboutPage() {
 
         <CertificatesList />
       </div>
-    </main>
+    </div>
   );
 }

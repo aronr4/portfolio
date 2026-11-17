@@ -18,9 +18,9 @@ export default function WorkPage() {
     : projects.filter((p) => p.category === activeCategory);
 
   return (
-    <main className="container-x py-16 md:py-24">
+    <div className="container-x pt-24 sm:pt-28 md:pt-36 pb-16 md:pb-24">
       {/* Page Header */}
-      <div className="border-b border-white/10 pb-12 mb-12">
+      <div className="border-b border-black/[0.08] pb-12 mb-12">
         <span className="text-xs uppercase tracking-widest text-accent font-display block mb-3">
           Selected Archive
         </span>
@@ -113,6 +113,6 @@ export default function WorkPage() {
           </Reveal>
         ))}
       </div>
-    </main>
+    </div>
   );
 }

@@ -54,7 +54,7 @@ export default async function ProjectDetailPage({
   const nextProject = projects[(currentIndex + 1) % projects.length];
 
   return (
-    <main className="py-16 md:py-24">
+    <div className="pt-24 sm:pt-28 md:pt-36 pb-16 md:pb-24">
       {/* Top Header */}
       <div className="container-x mb-12">
         <div className="flex items-center gap-2 text-xs uppercase tracking-widest text-accent font-display mb-4">
@@ -311,6 +311,6 @@ export default async function ProjectDetailPage({
           </div>
         </Link>
       </div>
-    </main>
+    </div>
   );
 }

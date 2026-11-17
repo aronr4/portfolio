@@ -55,19 +55,19 @@ export default function CertificatesList({
 
   return (
     <>
-      <div className="flex flex-col divide-y divide-white/10 border-y border-white/10">
+      <div className="flex flex-col divide-y divide-black/[0.08] border-y border-black/[0.08]">
         {certificates.map((cert) => (
           <button
             key={cert.id}
             type="button"
             onClick={() => setSelectedCert(cert)}
-            className="group w-full py-6 px-3 sm:px-4 -mx-3 sm:-mx-4 rounded-xl flex items-center justify-between text-left transition-colors duration-200 hover:bg-white/[0.04] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent cursor-pointer"
+            className="group w-full py-6 px-3 sm:px-4 -mx-3 sm:-mx-4 rounded-xl flex items-center justify-between text-left transition-colors duration-200 hover:bg-black/[0.02] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent cursor-pointer"
           >
             <div className="flex items-center gap-3 sm:gap-4 min-w-0 pr-4">
               <span className="font-display text-lg sm:text-xl font-bold text-fg group-hover:text-accent transition-colors truncate sm:whitespace-normal">
                 {cert.title}
               </span>
-              <span className="hidden sm:inline-flex items-center gap-1 text-[11px] uppercase tracking-wider font-display font-medium text-muted/70 group-hover:text-accent transition-colors border border-white/10 group-hover:border-accent/40 rounded-full px-2.5 py-0.5 whitespace-nowrap">
+              <span className="hidden sm:inline-flex items-center gap-1 text-[11px] uppercase tracking-wider font-display font-medium text-muted group-hover:text-accent transition-colors border border-black/[0.08] group-hover:border-accent/40 rounded-full px-2.5 py-0.5 whitespace-nowrap">
                 View Certificate
                 <svg
                   className="w-3 h-3 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"

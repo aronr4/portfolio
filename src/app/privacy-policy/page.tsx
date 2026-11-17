@@ -2,14 +2,14 @@ import Link from "next/link";
 import { siteConfig } from "@/data/site";
 
 export const metadata = {
-  title: "Privacy Policy — Kinetic Studio",
-  description: "Privacy policy and client data ethics for Kinetic Studio.",
+  title: "Privacy Policy — Aron",
+  description: "Privacy policy and client data ethics for Aron.",
 };
 
 export default function PrivacyPolicyPage() {
   return (
-    <main className="container-x py-16 md:py-24 max-w-4xl">
-      <div className="border-b border-white/10 pb-8 mb-12">
+    <div className="container-x pt-24 sm:pt-28 md:pt-36 pb-16 md:pb-24 max-w-4xl">
+      <div className="border-b border-black/[0.08] pb-8 mb-12">
         <span className="text-xs uppercase tracking-widest text-accent font-display block mb-3">
           Governance & Ethics
         </span>
@@ -62,14 +62,14 @@ export default function PrivacyPolicyPage() {
         </section>
       </div>
 
-      <div className="mt-16 pt-8 border-t border-white/10 flex items-center justify-between">
+      <div className="mt-16 pt-8 border-t border-black/[0.08] flex items-center justify-between">
         <Link
           href="/"
           className="text-xs uppercase tracking-wider text-muted hover:text-fg font-display transition-colors"
         >
-          ← Return to Studio Home
+          ← Return to Home
         </Link>
       </div>
-    </main>
+    </div>
   );
 }
