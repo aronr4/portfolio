@@ -10,6 +10,7 @@ export interface SiteConfig {
   description: string;
   email: string;
   phone: string;
+  whatsapp: string;
   location: string;
   timezone: string;
   navLinks: NavLink[];
@@ -23,7 +24,8 @@ export const siteConfig: SiteConfig = {
   title: "Aron — Creative Designer",
   description: "Creative designer crafting digital products, brands, and motion-driven experiences.",
   email: "hello@aron.com",
-  phone: "+1 (800) 987-1234",
+  phone: "+91 8220720241",
+  whatsapp: "918220720241",
   location: "New York, NY",
   timezone: "America/New_York",
   navLinks: [

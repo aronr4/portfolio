@@ -15,6 +15,7 @@ export default function ContactModal() {
   const headlineRef = useRef<HTMLHeadingElement>(null);
   const [formState, setFormState] = useState<FormState>("idle");
   const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });
+  const [whatsappHref, setWhatsappHref] = useState<string>("");
 
   // Animate in/out
   useEffect(() => {
@@ -89,10 +90,21 @@ export default function ContactModal() {
     e.preventDefault();
     setFormState("sending");
 
-    // Simulate sending (replace with real API call)
-    await new Promise((res) => setTimeout(res, 1200));
+    const text = `👋 *New Inquiry from Aron's Portfolio*\n\n*Name:* ${form.name || "Not specified"}\n*Email:* ${form.email || "Not specified"}\n*Phone:* ${form.phone || "Not specified"}\n\n*Message:*\n${form.message || "Hello Aron, I would like to discuss a project with you."}`;
+
+    const url = `https://wa.me/${siteConfig.whatsapp}?text=${encodeURIComponent(text)}`;
+    setWhatsappHref(url);
+
+    // Give visual feedback then open WhatsApp
+    await new Promise((res) => setTimeout(res, 500));
+
+    try {
+      window.open(url, "_blank", "noopener,noreferrer");
+    } catch {
+      // Fallback handled by direct link in sent screen
+    }
+
     setFormState("sent");
-    setForm({ name: "", email: "", phone: "", message: "" });
   };
 
   const headlineLetters = "Hello.".split("");
@@ -167,7 +179,9 @@ export default function ContactModal() {
                     {siteConfig.email}
                   </a>
                   <a
-                    href={`tel:${siteConfig.phone}`}
+                    href={`https://wa.me/${siteConfig.whatsapp}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-sm font-display text-[#607580] hover:text-[#111618] transition-colors"
                   >
                     {siteConfig.phone}
@@ -203,19 +217,32 @@ export default function ContactModal() {
           <div className="md:col-span-7 flex flex-col p-8 md:p-12">
             {formState === "sent" ? (
               <div className="flex flex-col items-center justify-center flex-1 text-center gap-4 py-16">
-                <span className="w-14 h-14 rounded-full bg-[#111618] flex items-center justify-center text-white text-2xl">
+                <span className="w-14 h-14 rounded-full bg-[#25D366] flex items-center justify-center text-white text-2xl shadow-lg">
                   ✓
                 </span>
                 <h3 className="font-display text-2xl font-bold text-[#111618]">
-                  Message sent!
+                  Connecting to WhatsApp...
                 </h3>
                 <p className="text-[#607580] font-body text-sm max-w-xs">
-                  We&apos;ll be in touch shortly. Looking forward to hearing more about your project.
+                  Your message has been pre-filled directly into WhatsApp. If WhatsApp didn&apos;t open automatically, click below:
                 </p>
+                {whatsappHref && (
+                  <a
+                    href={whatsappHref}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-2 inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#25D366] text-white font-display text-sm font-semibold hover:opacity-90 transition-opacity shadow-md"
+                  >
+                    Open in WhatsApp →
+                  </a>
+                )}
                 <button
                   type="button"
-                  onClick={() => setFormState("idle")}
-                  className="mt-4 text-xs uppercase tracking-widest text-[#607580] hover:text-[#111618] font-display transition-colors"
+                  onClick={() => {
+                    setFormState("idle");
+                    setForm({ name: "", email: "", phone: "", message: "" });
+                  }}
+                  className="mt-4 text-xs uppercase tracking-widest text-[#607580] hover:text-[#111618] font-display transition-colors cursor-pointer"
                 >
                   Send another message
                 </button>
