@@ -104,19 +104,19 @@ export const HERO_CARDS: HeroCardData[] = [
     ),
   },
 
-  // 5: Apex (Mobility Design & Vehicle OS)
+  // 5: Outbound (Expedition & Active Travel)
   {
     id: 5,
-    name: "Apex",
-    category: "Mobility Design",
+    name: "Outbound",
+    category: "Active Expedition",
     image: "https://framerusercontent.com/images/6ka5ZUVdLrOwC1bihB169y0Jjig.jpg?width=1086&height=1448",
-    bg: "#dc2626",
+    bg: "#e02b02",
     accent: "#ffffff",
     renderArtwork: () => (
-      <div className="w-full h-full relative overflow-hidden bg-[#dc2626] select-none">
+      <div className="w-full h-full relative overflow-hidden bg-[#e02b02] select-none">
         <Image
           src="https://framerusercontent.com/images/6ka5ZUVdLrOwC1bihB169y0Jjig.jpg?width=1086&height=1448"
-          alt="Apex"
+          alt="Outbound"
           fill
           sizes="(max-width: 768px) 70vw, 35vw"
           priority
@@ -127,19 +127,19 @@ export const HERO_CARDS: HeroCardData[] = [
     ),
   },
 
-  // 6: Nova (Collaborative Creative Platform)
+  // 6: Apex (Mobility Design & Vehicle OS)
   {
     id: 6,
-    name: "Nova",
-    category: "Creative Systems",
+    name: "Apex",
+    category: "Mobility Design",
     image: "https://framerusercontent.com/images/nBocJpXmbqNC0oBwue39Q1ltNeM.jpg?width=1086&height=1448",
-    bg: "#4c1d95",
-    accent: "#c084fc",
+    bg: "#dc2626",
+    accent: "#ffffff",
     renderArtwork: () => (
-      <div className="w-full h-full relative overflow-hidden bg-[#4c1d95] select-none">
+      <div className="w-full h-full relative overflow-hidden bg-[#dc2626] select-none">
         <Image
           src="https://framerusercontent.com/images/nBocJpXmbqNC0oBwue39Q1ltNeM.jpg?width=1086&height=1448"
-          alt="Nova"
+          alt="Apex"
           fill
           sizes="(max-width: 768px) 70vw, 35vw"
           priority

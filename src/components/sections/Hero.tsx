@@ -6,15 +6,15 @@ import { gsap } from "@/lib/gsap";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
 import { HERO_CARDS, type HeroCardData } from "./HeroCards";
 
-// Ordered ring sequence starting with Card 6 (NOVA) so that Card 1 & Card 2 sit at center
-// [6, 1, 2, 3, 4, 5]
+// Ordered ring sequence starting with Card 6 (Apex) so that W&H & Skywills sit at center
+// [6, 3, 4, 2, 1, 5]
 const RING_ORDER: HeroCardData[] = [
-  HERO_CARDS[5], // Nova
+  HERO_CARDS[5], // Apex (Escape the Ordinary)
   HERO_CARDS[2], // W&H
   HERO_CARDS[3], // Skywills
   HERO_CARDS[1], // Skywills Totem
   HERO_CARDS[0], // Dheerah
-  HERO_CARDS[4], // Apex
+  HERO_CARDS[4], // Outbound
 ];
 
 // 3 copies = 18 cards for seamless wrap
@@ -113,6 +113,10 @@ export default function Hero() {
       const cards = reelCardsRef.current.filter(Boolean) as HTMLDivElement[];
       const stackLayers = stackLayersRef.current;
 
+      // Reset any residual matrix transforms from prior navigation / cached DOM
+      gsap.set(cards, { clearProps: "transform" });
+      gsap.set(cards, { x: 0, xPercent: 0, scaleX: 1.0 });
+
       // Initial Frame at 0.00s
       masterTl.addLabel("start", 0);
       masterTl.set(line1Ref.current, { opacity: 0, y: 24 }, 0);
@@ -123,7 +127,7 @@ export default function Hero() {
       // Reset Stack & Reel
       masterTl.set(stackCardRef.current, { opacity: 0, scale: 0.12 }, 0);
       masterTl.set(reelContainerRef.current, { opacity: 0 }, 0);
-      masterTl.set(cards, { xPercent: 0, scaleX: 1.0, opacity: 1 }, 0);
+      masterTl.set(cards, { x: 0, xPercent: 0, scaleX: 1.0, opacity: 1 }, 0);
 
       // Stack initial layer visibility: start with Card 5 (dark phone)
       HERO_CARDS.forEach((c) => {
@@ -221,8 +225,9 @@ export default function Hero() {
         const targetPercent = (i - 7.5) * PITCH_PERCENT;
         masterTl.fromTo(
           card,
-          { xPercent: 0 },
+          { x: 0, xPercent: 0 },
           {
+            x: 0,
             xPercent: targetPercent,
             duration: 0.50,
             ease: "expo.out",
@@ -254,8 +259,9 @@ export default function Hero() {
 
           masterTl.fromTo(
             card,
-            { xPercent: startX },
+            { x: 0, xPercent: startX },
             {
+              x: 0,
               xPercent: endX,
               duration: 1.05,
               ease: "power3.out",
@@ -391,7 +397,12 @@ export default function Hero() {
       }
     }, heroRef);
 
-    return () => ctx.revert();
+    return () => {
+      ctx.revert();
+      if (reelCardsRef.current.length > 0) {
+        gsap.set(reelCardsRef.current.filter(Boolean), { clearProps: "all" });
+      }
+    };
   }, [prefersReducedMotion]);
 
   return (
