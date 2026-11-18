@@ -155,8 +155,8 @@ export const projects: Project[] = [
         "/images/projects/dheerah/01_overview_and_goal.jpg",
         "/images/projects/dheerah/02_design_process_and_problems.jpg",
         "/images/projects/dheerah/03_solving_and_architecture.jpg",
-        "/images/projects/dheerah/04_typography_and_color.jpg",
-        "/images/projects/dheerah/05_website_preview.jpg",
+        "/images/projects/dheerah/04_website_preview.jpg",
+        "/images/projects/dheerah/05_typography_and_color.jpg",
         "/images/projects/dheerah/06_responsive_experience.jpg"
       ],
       caseStudyPdf: "/documents/dheerah-case-study.pdf",
@@ -164,8 +164,8 @@ export const projects: Project[] = [
         "/images/projects/dheerah/01_overview_and_goal.jpg",
         "/images/projects/dheerah/02_design_process_and_problems.jpg",
         "/images/projects/dheerah/03_solving_and_architecture.jpg",
-        "/images/projects/dheerah/04_typography_and_color.jpg",
-        "/images/projects/dheerah/05_website_preview.jpg",
+        "/images/projects/dheerah/04_website_preview.jpg",
+        "/images/projects/dheerah/05_typography_and_color.jpg",
         "/images/projects/dheerah/06_responsive_experience.jpg"
       ]
     }
