@@ -19,6 +19,7 @@ export interface Project {
   capabilities: string[];
   images: {
     hero: string;
+    cardImage?: string;
     secondary?: string;
     caseStudy?: boolean;
     caseStudyImage?: string;
@@ -51,6 +52,8 @@ export const projects: Project[] = [
     capabilities: ["UI/UX Design", "E-Commerce", "User Flow", "Design System", "Branding"],
     images: {
       hero: "/images/projects/dheerah.jpg",
+      cardImage: "/images/projects/dheerah-card.jpg",
+      heroAspect: "4/3",
       caseStudy: true,
       caseStudyImage: "/images/projects/dheerah/dheerah_case_study.jpg",
       caseStudyImages: [

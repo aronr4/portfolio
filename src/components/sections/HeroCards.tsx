@@ -17,13 +17,13 @@ export const HERO_CARDS: HeroCardData[] = [
     id: 1,
     name: "Dheerah",
     category: "Designer Boutique",
-    image: "/images/projects/dheerah.jpg",
+    image: "/images/projects/dheerah-card.jpg",
     bg: "#111618",
     accent: "#ffffff",
     renderArtwork: () => (
       <div className="w-full h-full relative overflow-hidden bg-[#111618] select-none">
         <Image
-          src="/images/projects/dheerah.jpg"
+          src="/images/projects/dheerah-card.jpg"
           alt="Dheerah"
           fill
           sizes="(max-width: 768px) 70vw, 35vw"

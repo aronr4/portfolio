@@ -171,7 +171,7 @@ export default function FeaturedWork() {
                       )}
                     >
                       <Image
-                        src={project.images.hero}
+                        src={project.images.cardImage || project.images.hero}
                         alt={project.title}
                         fill
                         sizes="(max-width: 768px) 100vw, 431px"
