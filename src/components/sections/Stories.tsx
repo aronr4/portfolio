@@ -100,6 +100,8 @@ function RenderStoryCard({ card }: { card: StoryCard }) {
 
 export default function Stories() {
   const sectionRef = useRef<HTMLElement>(null);
+  const row1Ref = useRef<HTMLDivElement>(null);
+  const row2Ref = useRef<HTMLDivElement>(null);
   const prefersReducedMotion = useReducedMotion();
 
   useEffect(() => {
@@ -107,23 +109,43 @@ export default function Stories() {
     if (!section || prefersReducedMotion) return;
 
     const ctx = gsap.context(() => {
-      const cards = section.querySelectorAll(".story-card");
-      gsap.fromTo(
-        cards,
-        { y: 40, opacity: 0 },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 0.8,
-          stagger: 0.05,
-          ease: "expo.out",
-          scrollTrigger: {
-            trigger: section,
-            start: "top 75%",
-            once: true,
-          },
-        }
-      );
+      // Row 1 loads in from the left corner
+      if (row1Ref.current) {
+        gsap.fromTo(
+          row1Ref.current,
+          { x: -220, opacity: 0 },
+          {
+            x: 0,
+            opacity: 1,
+            duration: 1.1,
+            ease: "power3.out",
+            scrollTrigger: {
+              trigger: section,
+              start: "top 78%",
+              once: true,
+            },
+          }
+        );
+      }
+
+      // Row 2 loads in from the right corner
+      if (row2Ref.current) {
+        gsap.fromTo(
+          row2Ref.current,
+          { x: 220, opacity: 0 },
+          {
+            x: 0,
+            opacity: 1,
+            duration: 1.1,
+            ease: "power3.out",
+            scrollTrigger: {
+              trigger: section,
+              start: "top 78%",
+              once: true,
+            },
+          }
+        );
+      }
     }, sectionRef);
 
     return () => ctx.revert();
@@ -136,8 +158,6 @@ export default function Stories() {
       aria-label="Stories Section"
       style={{
         paddingTop: "var(--stories-pt)",
-        paddingLeft: "var(--page-pad-x)",
-        paddingRight: "var(--page-pad-x)",
       }}
       className="w-full flex flex-col items-center bg-bg overflow-hidden"
     >
@@ -145,6 +165,8 @@ export default function Stories() {
         style={{
           maxWidth: "calc(var(--work-col-width) * 2 + var(--work-col-gap))",
           gap: "var(--stories-gap)",
+          paddingLeft: "var(--page-pad-x)",
+          paddingRight: "var(--page-pad-x)",
         }}
         className="w-full flex flex-col mb-12"
       >
@@ -172,8 +194,8 @@ export default function Stories() {
         </h2>
       </div>
 
-      {/* Marquee Row 1 */}
-      <div className="mb-4 w-full" data-cursor="drag">
+      {/* Marquee Row 1 — Edge to edge, loads in from left corner */}
+      <div ref={row1Ref} className="mb-4 w-full will-change-transform" data-cursor="drag">
         <Marquee speed={55} direction="left" pauseOnHover={true}>
           <div className="flex gap-4 pr-4 py-2">
             {storyCardsRow1.map((card) => (
@@ -183,8 +205,8 @@ export default function Stories() {
         </Marquee>
       </div>
 
-      {/* Marquee Row 2 */}
-      <div className="w-full" data-cursor="drag">
+      {/* Marquee Row 2 — Edge to edge, loads in from right corner */}
+      <div ref={row2Ref} className="w-full will-change-transform" data-cursor="drag">
         <Marquee speed={65} direction="right" pauseOnHover={true}>
           <div className="flex gap-4 pr-4 py-2">
             {storyCardsRow2.map((card) => (
