@@ -35,32 +35,9 @@ export const HERO_CARDS: HeroCardData[] = [
     ),
   },
 
-  // 2: Skywills Totem (Global Logistics & Trade)
+  // 2: W&H (Mobile Shopping Experience)
   {
     id: 2,
-    name: "Skywills",
-    category: "Air & Sea Trade",
-    image: "/images/projects/skywills/extracted_2.jpeg",
-    bg: "#0d1b2a",
-    accent: "#ffffff",
-    renderArtwork: () => (
-      <div className="w-full h-full relative overflow-hidden bg-[#0d1b2a] select-none">
-        <Image
-          src="/images/projects/skywills/extracted_2.jpeg"
-          alt="Skywills"
-          fill
-          sizes="(max-width: 768px) 70vw, 35vw"
-          priority
-          className="object-cover object-center pointer-events-none"
-        />
-        <div className="absolute inset-0 bg-gradient-to-tr from-black/20 via-transparent to-white/10 pointer-events-none" />
-      </div>
-    ),
-  },
-
-  // 3: W&H (Mobile Shopping Experience)
-  {
-    id: 3,
     name: "W&H",
     category: "Mobile Commerce",
     image: "/images/projects/w-and-h.jpg",
@@ -71,6 +48,29 @@ export const HERO_CARDS: HeroCardData[] = [
         <Image
           src="/images/projects/w-and-h.jpg"
           alt="W&H"
+          fill
+          sizes="(max-width: 768px) 70vw, 35vw"
+          priority
+          className="object-cover object-center pointer-events-none"
+        />
+        <div className="absolute inset-0 bg-gradient-to-tr from-black/20 via-transparent to-white/10 pointer-events-none" />
+      </div>
+    ),
+  },
+
+  // 3: Skywills Totem (Global Logistics & Trade)
+  {
+    id: 3,
+    name: "Skywills",
+    category: "Air & Sea Trade",
+    image: "/images/projects/skywills/extracted_2.jpeg",
+    bg: "#0d1b2a",
+    accent: "#ffffff",
+    renderArtwork: () => (
+      <div className="w-full h-full relative overflow-hidden bg-[#0d1b2a] select-none">
+        <Image
+          src="/images/projects/skywills/extracted_2.jpeg"
+          alt="Skywills"
           fill
           sizes="(max-width: 768px) 70vw, 35vw"
           priority

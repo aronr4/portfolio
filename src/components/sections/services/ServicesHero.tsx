@@ -28,9 +28,9 @@ export default function ServicesHero({ videoSrc }: ServicesHeroProps) {
       image: "/images/projects/dheerah.jpg",
     },
     {
-      title: "Nova",
-      category: "Creative Systems",
-      image: "https://framerusercontent.com/images/bVS9QEJVywX32fS66G9f7LQu1g.jpg",
+      title: "W&H",
+      category: "Mobile Commerce",
+      image: "/images/projects/w-and-h.jpg",
     },
     {
       title: "Skywills",
@@ -38,14 +38,9 @@ export default function ServicesHero({ videoSrc }: ServicesHeroProps) {
       image: "/images/projects/skywills/extracted_0.jpeg",
     },
     {
-      title: "Dheerah",
-      category: "Designer Boutique",
-      image: "/images/projects/dheerah.jpg",
-    },
-    {
-      title: "W&H",
-      category: "Mobile Commerce",
-      image: "/images/projects/w-and-h.jpg",
+      title: "Nova",
+      category: "Creative Systems",
+      image: "https://framerusercontent.com/images/bVS9QEJVywX32fS66G9f7LQu1g.jpg",
     },
     {
       title: "Apex",
