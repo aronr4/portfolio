@@ -25,37 +25,37 @@ export default function PrivacyPolicyPage() {
         <section>
           <h2 className="font-display text-xl font-bold text-fg mb-3">1. Overview</h2>
           <p>
-            At {siteConfig.brand} Studio, we value the trust you place in us. This privacy policy explains how we collect, use, and protect any personal information you provide when visiting our website or communicating directly with our team.
+            I value the trust you place in me. This privacy policy explains how I collect, use, and protect any personal information you provide when visiting my website or contacting me directly.
           </p>
         </section>
 
         <section>
           <h2 className="font-display text-xl font-bold text-fg mb-3">2. Information Collection</h2>
           <p>
-            We collect only essential information required to respond to business inquiries, evaluate potential project partnerships, and ensure the performance and security of our digital portfolio. This may include your name, email address, company details, and project brief submitted via email or contact forms.
+            I collect only the information needed to respond to enquiries, discuss potential projects, and keep my portfolio secure and working well. This may include your name, email address, phone number, and project details submitted through email or the contact form.
           </p>
         </section>
 
         <section>
           <h2 className="font-display text-xl font-bold text-fg mb-3">3. Telemetry and Analytics</h2>
           <p>
-            Our website utilizes minimal, privacy-centric telemetry to measure technical performance, render speed, and accessibility metrics. We do not sell, rent, or trade your personal information to third-party data brokers or marketing networks.
+            My website uses minimal analytics to measure performance and loading speed. I do not sell, rent, or trade your personal information to third parties or marketing networks.
           </p>
         </section>
 
         <section>
           <h2 className="font-display text-xl font-bold text-fg mb-3">4. Cookies and Local Storage</h2>
           <p>
-            We use lightweight browser storage solely to preserve interface preferences, such as reduced motion preferences and session state. These tokens do not track you across external web properties.
+            I use lightweight browser storage only to remember interface preferences, such as reduced motion settings. This does not track you across other websites.
           </p>
         </section>
 
         <section>
           <h2 className="font-display text-xl font-bold text-fg mb-3">5. Data Protection and Rights</h2>
           <p>
-            You have the right to request access to any personal correspondence or data we hold, or to request its immediate deletion. To submit an inquiry, please contact our team directly at{" "}
-            <a href={`mailto:${siteConfig.email}`} className="text-accent hover:underline">
-              {siteConfig.email}
+            You have the right to ask what personal information I hold about you, or to ask me to delete it. To make a request, email me at{" "}
+            <a href="mailto:sathisharonr@gmail.com" className="text-accent hover:underline">
+              sathisharonr@gmail.com
             </a>
             .
           </p>
