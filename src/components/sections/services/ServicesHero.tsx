@@ -38,11 +38,6 @@ export default function ServicesHero({ videoSrc }: ServicesHeroProps) {
       image: "/images/projects/skywills/extracted_0.jpeg",
     },
     {
-      title: "Nova",
-      category: "Creative Systems",
-      image: "https://framerusercontent.com/images/bVS9QEJVywX32fS66G9f7LQu1g.jpg",
-    },
-    {
       title: "Apex",
       category: "Mobility Design",
       image: "https://framerusercontent.com/images/6ka5ZUVdLrOwC1bihB169y0Jjig.jpg",

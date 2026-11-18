@@ -141,34 +141,6 @@ export const projects: Project[] = [
         "/images/projects/skywills/extracted_2.jpeg"
       ]
     }
-  },
-  {
-    slug: "nova",
-    title: "Nova",
-    category: "Creative SaaS",
-    sector: "Creative SaaS",
-    year: "2025",
-    metric: "75%",
-    metricLabel: "fewer revisions",
-    description: "Nova is a collaborative design platform built for teams shaping brands, campaigns, and visual systems at speed. The product brings flexible composition tools, shared assets, and brand controls into one focused workspace, giving designers room to experiment without losing consistency.",
-    tagline: "Creative systems, made fluid.",
-    quote: {
-      text: "Nova gave our team enough structure to stay aligned without sanding away the experimentation that makes the work interesting.",
-      author: "Lena Ortiz",
-      role: "Nova Creative Director"
-    },
-    challenge: "Creative teams were moving between design files, asset libraries, feedback threads, and disconnected brand guidelines just to keep everyday work moving.",
-    solution: "The experience centers on a flexible canvas supported by persistent layers, shared swatches, reusable components, and lightweight collaboration tools.",
-    outcome: "75% fewer design revisions across multi-disciplinary creative departments.",
-    capabilities: ["Social Media", "Branding", "UX Design", "Digital Builds"],
-    images: {
-      hero: "https://framerusercontent.com/images/8G3dIuDlgJdCRp9KGus3P7RvlZI.jpg",
-      secondary: "https://framerusercontent.com/images/e4guFY2tLOjPg4nI07mgeBc.png",
-      gallery: [
-        "https://framerusercontent.com/images/8G3dIuDlgJdCRp9KGus3P7RvlZI.jpg",
-        "https://framerusercontent.com/images/e4guFY2tLOjPg4nI07mgeBc.png"
-      ]
-    }
   }
 ];
 
