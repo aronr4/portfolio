@@ -136,24 +136,37 @@ export const projects: Project[] = [
     year: "2026",
     metric: "84%",
     metricLabel: "boutique lift",
-    description: "Dheerah is an artisanal designer boutique and modern digital storefront celebrating handcrafted cotton gowns and contemporary silhouettes. Crafted to deliver an editorial shopping experience that seamlessly connects curated collections with sophisticated craftsmanship.",
+    description: "Dheerah is a modern fashion e-commerce website designed to create a smooth, engaging, and visually immersive shopping experience, guiding users effortlessly from exploration to purchase.",
     tagline: "Embrace the perfect blend of style and sophistication.",
     quote: {
-      text: "Dheerah shaped our collections into an editorial digital storefront that elevated customer connection and shopping elegance.",
+      text: "Dheerah shaped our collections into an editorial digital storefront that elevated customer connection, seamless product discovery, and shopping elegance.",
       author: "Elena Park",
       role: "Dheerah Creative Director"
     },
-    challenge: "Creating a boutique digital experience that feels luxurious, fast, and tactile without losing the handcrafted warmth of artisan garments.",
-    solution: "A minimalist layout built with editorial typography, responsive product lookbooks, and high-conversion purchase journeys.",
-    outcome: "84% lift in boutique orders and higher engagement across seasonal lookbooks.",
-    capabilities: ["E-Commerce", "Digital Builds", "UX Design", "Branding"],
+    challenge: "Traditional fashion e-commerce websites often suffer from weak call-to-actions, confusing navigation menus, lack of distinct branding, and cluttered layouts that cause customer friction and drop-offs.",
+    solution: "A streamlined, user-friendly shopping experience with intuitive navigation, engaging 'New In' lookbooks, balanced typography (Kygile & Sora), refined warm color palettes, and fully responsive layouts across mobile, tablet, and desktop.",
+    outcome: "84% lift in boutique engagement, friction-free checkout flows, and a cohesive multi-device experience across 10+ tailored e-commerce templates.",
+    capabilities: ["UI/UX Design", "E-Commerce", "User Flow", "Design System", "Branding"],
     images: {
       hero: "/images/projects/dheerah.jpg",
       caseStudy: true,
       caseStudyImage: "/images/projects/dheerah/dheerah_case_study.jpg",
+      caseStudyImages: [
+        "/images/projects/dheerah/01_overview_and_goal.jpg",
+        "/images/projects/dheerah/02_design_process_and_problems.jpg",
+        "/images/projects/dheerah/03_solving_and_architecture.jpg",
+        "/images/projects/dheerah/04_typography_and_color.jpg",
+        "/images/projects/dheerah/05_website_preview.jpg",
+        "/images/projects/dheerah/06_responsive_experience.jpg"
+      ],
       caseStudyPdf: "/documents/dheerah-case-study.pdf",
       gallery: [
-        "/images/projects/dheerah/dheerah_case_study.jpg"
+        "/images/projects/dheerah/01_overview_and_goal.jpg",
+        "/images/projects/dheerah/02_design_process_and_problems.jpg",
+        "/images/projects/dheerah/03_solving_and_architecture.jpg",
+        "/images/projects/dheerah/04_typography_and_color.jpg",
+        "/images/projects/dheerah/05_website_preview.jpg",
+        "/images/projects/dheerah/06_responsive_experience.jpg"
       ]
     }
   }
