@@ -42,9 +42,9 @@ export const storyCardsRow1: StoryCard[] = [
   },
   {
     type: "stat",
-    id: "awards-stat",
-    label: "Awwwards",
-    targetNumber: 50,
+    id: "projects-stat",
+    label: "Projects",
+    targetNumber: 5,
     suffix: "+",
     description: "Recognized for standout work across brand, product, and digital design.",
     badgeImg: "https://framerusercontent.com/images/ctpdlzPiUpSrDSdYvpTGNRvY.png"
