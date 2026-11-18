@@ -166,13 +166,7 @@ export default function ServicesHero({ videoSrc }: ServicesHeroProps) {
         </div>
 
         {/* Top Header Row with Floating Glass Pause/Play Button */}
-        <div className="relative z-30 flex items-center justify-between w-full">
-          {/* Subtle Project Tag Indicator */}
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full backdrop-blur-md bg-white/10 border border-white/15 text-white/90 text-xs font-body uppercase tracking-wider">
-            <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
-            <span>Studio Showreel — {studioSlides[activeSlide]?.title}</span>
-          </div>
-
+        <div className="relative z-30 flex items-center justify-end w-full">
           {/* Pause / Play Button */}
           <button
             ref={buttonRef}
