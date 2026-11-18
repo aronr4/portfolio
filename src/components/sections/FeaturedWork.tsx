@@ -175,12 +175,7 @@ export default function FeaturedWork() {
                         alt={project.title}
                         fill
                         sizes="(max-width: 768px) 100vw, 431px"
-                        className={cn(
-                          "object-cover transition-transform duration-700 ease-out",
-                          isPulse
-                            ? "scale-100 group-hover:scale-[1.03]"
-                            : "scale-[1.20] group-hover:scale-[1.24]"
-                        )}
+                        className="object-cover transition-transform duration-700 ease-out scale-100 group-hover:scale-[1.03]"
                       />
                     </div>
 
@@ -196,12 +191,7 @@ export default function FeaturedWork() {
                           alt={`${project.title} slide`}
                           fill
                           sizes="(max-width: 768px) 100vw, 431px"
-                          className={cn(
-                            "object-cover transition-transform duration-700 ease-out",
-                            isPulse
-                              ? "scale-100 group-hover:scale-[1.03]"
-                              : "scale-[1.20] group-hover:scale-[1.24]"
-                          )}
+                          className="object-cover transition-transform duration-700 ease-out scale-100 group-hover:scale-[1.03]"
                         />
                       </div>
                     )}
