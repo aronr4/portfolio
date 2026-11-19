@@ -269,7 +269,7 @@ export default function ContactModal() {
                       type="email"
                       value={form.email}
                       onChange={handleChange}
-                      placeholder={siteConfig.email}
+                      placeholder="jane@example.com"
                       required
                       className="w-full h-12 px-5 rounded-full bg-[#dce2e5] placeholder-[#8A8A8A] text-[#111618] text-sm font-body focus:outline-none focus:ring-2 focus:ring-[#111618] transition-all"
                     />
@@ -284,7 +284,7 @@ export default function ContactModal() {
                       type="tel"
                       value={form.phone}
                       onChange={handleChange}
-                      placeholder={siteConfig.phone}
+                      placeholder="+1 (555) 000-0000"
                       className="w-full h-12 px-5 rounded-full bg-[#dce2e5] placeholder-[#8A8A8A] text-[#111618] text-sm font-body focus:outline-none focus:ring-2 focus:ring-[#111618] transition-all"
                     />
                   </div>
