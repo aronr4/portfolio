@@ -144,7 +144,7 @@ export default function ContactModal() {
 
         <div className="grid grid-cols-1 md:grid-cols-12 min-h-[520px]">
           {/* ── Left Panel ────────────────────── */}
-          <div className="md:col-span-5 flex flex-col justify-between p-8 md:p-12 border-b md:border-b-0 md:border-r border-black/[0.08]">
+          <div className="md:col-span-5 flex flex-col justify-between p-6 sm:p-8 md:p-12 border-b md:border-b-0 md:border-r border-black/[0.08]">
             {/* Giant Headline */}
             <div>
               <h2
@@ -172,15 +172,15 @@ export default function ContactModal() {
             </div>
 
             {/* Contact Details */}
-            <div className="mt-10 md:mt-0 grid grid-cols-2 gap-x-8 gap-y-6">
-              <div>
-                <p className="text-xs uppercase tracking-widest text-[#607580] font-display mb-3">
+            <div className="mt-8 md:mt-0 grid grid-cols-1 sm:grid-cols-2 gap-y-6 gap-x-8">
+              <div className="min-w-0">
+                <p className="text-xs uppercase tracking-widest text-[#607580] font-display mb-2.5">
                   Get in touch
                 </p>
                 <div className="flex flex-col gap-1.5">
                   <a
                     href={`mailto:${siteConfig.email}`}
-                    className="text-sm font-display text-[#111618] hover:text-black transition-colors"
+                    className="text-sm font-display text-[#111618] hover:text-black transition-colors break-words"
                   >
                     {siteConfig.email}
                   </a>
@@ -196,8 +196,8 @@ export default function ContactModal() {
                 </div>
               </div>
 
-              <div>
-                <p className="text-xs uppercase tracking-widest text-[#607580] font-display mb-3">
+              <div className="min-w-0">
+                <p className="text-xs uppercase tracking-widest text-[#607580] font-display mb-2.5">
                   Connect
                 </p>
                 <div className="flex flex-col gap-1.5">
@@ -218,7 +218,7 @@ export default function ContactModal() {
           </div>
 
           {/* ── Right Panel: Form ────────────── */}
-          <div className="md:col-span-7 flex flex-col p-8 md:p-12">
+          <div className="md:col-span-7 flex flex-col p-6 sm:p-8 md:p-12">
             {formState === "sent" ? (
               <div className="flex flex-col items-center justify-center flex-1 text-center gap-4 py-16">
                 <span className="w-14 h-14 rounded-full bg-[#111618] flex items-center justify-center text-white text-2xl shadow-sm">
