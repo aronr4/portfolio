@@ -42,6 +42,6 @@ export const siteConfig: SiteConfig = {
   connectLinks: [
     { label: "LinkedIn", href: "https://linkedin.com" },
     { label: "Instagram", href: "https://instagram.com" },
-    { label: "Dribbble", href: "https://dribbble.com" }
+    { label: "Behance", href: "https://www.behance.net/sathisharon" }
   ]
 };
