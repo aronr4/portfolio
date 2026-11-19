@@ -275,8 +275,12 @@ export default async function ProjectDetailPage({
       </div>
 
 
-      {/* Explore Other Projects Carousel (Current project excluded) */}
-      <ExploreSection excludeSlug={project.slug} />
+      {/* Next Project Carousel (Current project excluded) */}
+      <ExploreSection
+        excludeSlug={project.slug}
+        label="Next"
+        title="Project"
+      />
     </div>
   );
 }

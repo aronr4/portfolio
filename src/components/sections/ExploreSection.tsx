@@ -29,11 +29,15 @@ const defaultExploreProjects: ExploreProjectItem[] = allProjects.map((p) => ({
 interface ExploreSectionProps {
   excludeSlug?: string;
   className?: string;
+  label?: string;
+  title?: string;
 }
 
 export default function ExploreSection({
   excludeSlug,
   className = "",
+  label = "Work",
+  title = "Explore",
 }: ExploreSectionProps) {
   const sectionRef = useRef<HTMLDivElement>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
@@ -178,7 +182,7 @@ export default function ExploreSection({
         <div className="inline-flex items-center gap-2 mb-3">
           <span className="w-4 h-[2px] bg-accent rounded-full inline-block" />
           <span className="font-poppins text-sm md:text-base font-normal text-[#111618]">
-            Work
+            {label}
           </span>
         </div>
 
@@ -186,7 +190,7 @@ export default function ExploreSection({
           ref={titleRef}
           className="font-clash text-[clamp(60px,12.5vw,180px)] leading-[0.7] tracking-[-0.02em] font-semibold text-[#111618]"
         >
-          Explore<span className="text-accent">.</span>
+          {title}<span className="text-accent">.</span>
         </h2>
       </div>
 
