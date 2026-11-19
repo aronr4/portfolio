@@ -40,7 +40,7 @@ export const siteConfig: SiteConfig = {
     { label: "Privacy Policy", href: "/privacy-policy" }
   ],
   connectLinks: [
-    { label: "LinkedIn", href: "https://linkedin.com" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/sathisharonr" },
     { label: "Instagram", href: "https://instagram.com" },
     { label: "Behance", href: "https://www.behance.net/sathisharon" }
   ]
