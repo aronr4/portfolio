@@ -600,7 +600,7 @@ export default function Hero() {
         {/* LAYER 3: BOTTOM ROW (z-30, inside the panel) */}
         {/* ========================================================== */}
         <div className="relative z-30 w-full flex items-center justify-end">
-          {/* Right: ↗ Explore our work. */}
+          {/* Right: ↗ Explore my work. */}
           <div ref={bottomRightRef} className="will-change-transform">
             <Link
               href="/work"
@@ -613,7 +613,7 @@ export default function Hero() {
               <span className="text-sm transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">
                 ↗
               </span>
-              <span>Explore our work.</span>
+              <span>Explore my work.</span>
             </Link>
           </div>
         </div>
