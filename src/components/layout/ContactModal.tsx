@@ -172,31 +172,31 @@ export default function ContactModal() {
             </div>
 
             {/* Contact Details */}
-            <div className="mt-8 md:mt-0 grid grid-cols-1 sm:grid-cols-2 gap-y-6 gap-x-8">
-              <div className="min-w-0">
+            <div className="mt-8 md:mt-0 flex flex-col sm:flex-row justify-between items-start gap-6 sm:gap-8">
+              <div>
                 <p className="text-xs uppercase tracking-widest text-[#607580] font-display mb-2.5">
                   Get in touch
                 </p>
                 <div className="flex flex-col gap-1.5">
                   <a
                     href={`mailto:${siteConfig.email}`}
-                    className="text-sm font-display text-[#111618] hover:text-black transition-colors break-words"
+                    className="text-sm font-display text-[#111618] hover:text-black transition-colors whitespace-nowrap"
                   >
                     {siteConfig.email}
                   </a>
                   <a
                     href={`tel:${siteConfig.phone}`}
-                    className="text-sm font-display text-[#607580] hover:text-[#111618] transition-colors"
+                    className="text-sm font-display text-[#607580] hover:text-[#111618] transition-colors whitespace-nowrap"
                   >
                     {siteConfig.phone}
                   </a>
-                  <span className="text-sm font-display text-[#607580]">
+                  <span className="text-sm font-display text-[#607580] whitespace-nowrap">
                     {siteConfig.location}
                   </span>
                 </div>
               </div>
 
-              <div className="min-w-0">
+              <div>
                 <p className="text-xs uppercase tracking-widest text-[#607580] font-display mb-2.5">
                   Connect
                 </p>
@@ -207,7 +207,7 @@ export default function ContactModal() {
                       href={link.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm font-display text-[#111618] hover:text-black transition-colors"
+                      className="text-sm font-display text-[#111618] hover:text-black transition-colors whitespace-nowrap"
                     >
                       {link.label}
                     </a>

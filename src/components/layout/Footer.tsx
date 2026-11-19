@@ -126,7 +126,7 @@ export default function Footer() {
             <div className="flex flex-col gap-1.5 font-body text-sm">
               <a
                 href={`mailto:${siteConfig.email}`}
-                className="text-fg hover:opacity-70 transition-opacity"
+                className="text-fg hover:opacity-70 transition-opacity whitespace-nowrap"
               >
                 {siteConfig.email}
               </a>
